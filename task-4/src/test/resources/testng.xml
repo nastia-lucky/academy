@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All" parallel="classes" thread-count="2" verbose="1">
+    <parameter name="wealth" value="1000000.0"></parameter>
+    <parameter name="notwealth" value="999999"></parameter>
+    <listeners>
+        <listener class-name="com.epam.gomel.homework.Listener"></listener>
+    </listeners>
+    <test name="TestNGSuite">
+        <groups>
+            <run>
+                <include name="mood"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.gomel.homework.BaseTest"></class>
+            <class name="com.epam.gomel.homework.BoyCreationTest"></class>
+            <class name="com.epam.gomel.homework.BoyMoodCheck"></class>
+            <class name="com.epam.gomel.homework.GirlTest"></class>
+            <class name="com.epam.gomel.homework.GirlMoodCheck"></class>
+        </classes>
+    </test>
+</suite>
