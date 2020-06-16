@@ -1,0 +1,58 @@
+Google search page :
+
+1. Query input //input[@title='Search'] - input[title='Search']
+2. ‘search in Google’ button //div[@class='FPdoLc tfB0Bf']//input[@value='Google Search'] -  div[class='FPdoLc tfB0Bf'] input[value='Google Search']
+3. “I am lucky!’ button
+ //div[@class='FPdoLc tfB0Bf']//input[@value="I'm Feeling Lucky"] - div[class='FPdoLc tfB0Bf'] input[value="I'm Feeling Lucky"]
+4. Search for “nyan cat” and create a locator that returns ALL 10 result links  //div[@id='search']//div[@class='g']  -  div#search div[class='g']
+5. n-th ‘o’ letter in Goooooooooogle //div[@id='foot']//td[n] - div#foot td:nth-child(n)
+
+
+Mail.ru main page:  
+1. login input //input[@id="mailbox:login"] - input[id="mailbox:login"]
+2. domain selection //select[@id='mailbox:domain'] -  select[id='mailbox:domain']
+3. ‘Ввести пароль’ button //input[@type='submit'] - input[type='submit']
+4. password input //input[@id='mailbox:password'] - input[id='mailbox:password']
+5. ‘Войти’ button //input[@type='submit'] - input[type='submit']
+
+
+Mail.ru main page (logged in):
+
+1. Links to folders
+
+Incoming - //div[@class='nav-folders']//a[@title="Входящие"] - div[class='nav-folders'] a[title="Входящие"]
+
+Outcoming -  //div[@class='nav-folders']//a[@title="Отправленные"] - div[class='nav-folders'] a[title="Отправленные"] 
+
+Drafts - //div[@class='nav-folders']//a[@title="Черновики"] -  div[class='nav-folders'] a[title="Черновики"]
+
+Spam -  //div[@class='nav-folders']//a[@title="Спам"] -  div[class='nav-folders'] a[title="Спам"] 
+
+Trash - //div[@class='nav-folders']//a[@title="Корзина"] - div[class='nav-folders'] a[title="Корзина"]
+
+2. Action buttons
+
+Delete - //td[@class='layout__content']//span[@title='Удалить'] - td[class='layout__content'] span[title='Удалить']
+
+Mark as spam //td[@class='layout__content']//span[@title='Спам'] -   td[class='layout__content'] span[title='Спам'] 
+
+Archive //td[@class='layout__content']//span[@title='В архив'] - td[class='layout__content'] span[title='В архив']
+
+Reply //td[@class='layout__content']//span[@title='Ответить'] - td[class='layout__content'] span[title='Ответить']
+
+Forward //td[@class='layout__content']//span[@title='Переслать'] - td[class='layout__content'] span[title='Переслать']
+
+3. Checkbox for one exact letter  //div[@class='dataset-letters']//a[@data-id='1:365024a5ee3011a0:0']//span[@class='ll-av__checkbox'] -  div.dataset-letters a[data-id='1:365024a5ee3011a0:0'] span[class='ll-av__checkbox']
+
+4.  Opening link for one exact letter //div[@class='dataset-letters']//a[@href='/inbox/1:b23d32db66561542:0/?'] - div.dataset-letters a[href='/inbox/1:b23d32db66561542:0/?']
+
+5. New letter page 
+
+input for address  //div[@class='contactsContainer--3RMuQ']//div[@class='inputContainer--nsqFu'] - div.contactsContainer--3RMuQ div.inputContainer--nsqFu
+
+topic  //div[@class='subject__container--HWnat']//div[@class='inputContainer--nsqFu'] - div.subject__container--HWnat div.inputContainer--nsqFu
+
+text  //div[@role='textbox'] - div[role=textbox] 
+
+
+
