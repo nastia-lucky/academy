@@ -1,4 +1,4 @@
-package com.epam.gomel.homework;
+package task4;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

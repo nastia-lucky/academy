@@ -1,4 +1,4 @@
-package com.epam.gomel.homework;
+package task4;
 
 public abstract class Human {
 
