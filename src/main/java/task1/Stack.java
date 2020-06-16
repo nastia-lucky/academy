@@ -1,7 +1,6 @@
-package com.itacademy.task1;
+package task1;
 
 import java.util.ArrayList;
-import java.util.EmptyStackException;
 
 public class Stack<T> {
     private ArrayList<T> storage = new ArrayList<>();

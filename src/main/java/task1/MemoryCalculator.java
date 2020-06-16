@@ -1,4 +1,4 @@
-package com.itacademy.task1;
+package task1;
 
 public class MemoryCalculator extends AbstractCalculator {
     public static double memory;

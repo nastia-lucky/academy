@@ -1,4 +1,4 @@
-package com.itacademy.task1;
+package task1;
 
 public class EngineerCalculator extends SimpleCalculator {
 

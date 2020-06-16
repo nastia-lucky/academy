@@ -1,4 +1,4 @@
-package com.itacademy.task1;
+package task1;
 
 public enum Operation {
     PLUS("+" ,0, true, false),
