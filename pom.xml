@@ -24,12 +24,17 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.9.9</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
         </dependency>
     </dependencies>
 </project>

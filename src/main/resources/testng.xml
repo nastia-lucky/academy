@@ -1,0 +1,13 @@
+<suite name="mail ru test">
+    <test name="mail.ru test">
+        <classes>
+            <class name="task6.tests.TestWriteCorrectLetter">
+            </class>
+            <class name="task6.tests.TestNegativeLogin"></class>
+            <class name="task6.tests.TestNegativeSendLetter"></class>
+            <class name="task6.tests.TestPositiveLogin"></class>
+            <class name="task6.tests.TestDeleteLetter"></class>
+            <class name="task6.tests.TestRequiredWriteLetterField"></class>
+        </classes>
+    </test>
+</suite>
