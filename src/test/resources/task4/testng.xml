@@ -7,11 +7,6 @@
         <listener class-name="task4.Listener"></listener>
     </listeners>
     <test name="TestNGSuite">
-        <groups>
-            <run>
-                <include name="mood"/>
-            </run>
-        </groups>
         <classes>
             <class name="task4.BaseTest"></class>
             <class name="task4.BoyCreationTest"></class>

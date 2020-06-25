@@ -10,6 +10,15 @@ import static java.time.Month.*;
 @Listeners({Listener.class})
 public class BoyMoodCheck extends BaseTest {
 
+    @DataProvider(name = "data for bad mood")
+    public Object[][] createBoydata() {
+        return new Object[][]{
+                {DECEMBER, 1_000_000, null},
+                {JUNE, 45, null},
+                {DECEMBER, 56, girlTrue}
+        };
+    }
+
     private static Boy boyExellentMood;
     private static Boy boyGoodMood;
     private static Boy boyNeutralMood;
@@ -25,44 +34,33 @@ public class BoyMoodCheck extends BaseTest {
     @Test(groups = "mood", priority = 2)
     public void checkExellentMoodCheck(double wealth) {
         boyExellentMood = new Boy(Month.JUNE, wealth, girlTrue);
-        Assert.assertEquals(boyExellentMood.getMood(), Mood.EXCELLENT);
+        Assert.assertEquals(boyExellentMood.getMood(), Mood.EXCELLENT, "Setting exellent mood doesn't work");
     }
 
     @Parameters({"wealth"})
     @Test(groups = "mood", priority = 2)
     public void checkGoodMood(double wealth) {
         boyGoodMood = new Boy(JANUARY, wealth, girlTrue);
-        Assert.assertEquals(boyGoodMood.getMood(), Mood.GOOD);
+        Assert.assertEquals(boyGoodMood.getMood(), Mood.GOOD, "Setting good mood doesn't work");
     }
 
     @Parameters({"wealth"})
     @Test(groups = "mood", priority = 2)
     public void checkNeutralMood(double wealth) {
         boyNeutralMood = new Boy(Month.JUNE, wealth, girlFalse);
-        Assert.assertEquals(boyNeutralMood.getMood(), Mood.NEUTRAL);
-    }
-
-    @DataProvider(name = "data for bad mood")
-    public Object[][] createBoydata() {
-        return new Object[][]{
-                {DECEMBER, 1_000_000, null},
-                {JUNE, 45, null},
-                {DECEMBER, 56, girlTrue}
-        };
+        Assert.assertEquals(boyNeutralMood.getMood(), Mood.NEUTRAL, "Setting neutral mood doesn't work");
     }
 
     @Test(dataProvider = "data for bad mood", groups = "mood", priority = 2)
     public void checkBadMood(Month month, double wealth, Girl girl) {
         Boy boyBadMood = new Boy(month, wealth, girl);
-        Assert.assertEquals(boyBadMood.getMood(), Mood.BAD);
+        Assert.assertEquals(boyBadMood.getMood(), Mood.BAD, "Setting bad mood doesn't work");
     }
 
     @Parameters({"notwealth"})
     @Test(groups = "mood", priority = 2)
     public void checkHorribleMood(double notwealth) {
         boyHorribleMood = new Boy(JANUARY, notwealth, girlFalse);
-        Assert.assertEquals(boyHorribleMood.getMood(), Mood.HORRIBLE);
+        Assert.assertEquals(boyHorribleMood.getMood(), Mood.HORRIBLE, "Setting horrible mood doesn't work");
     }
-
-
 }

@@ -15,6 +15,7 @@ public class GirlTest extends BaseTest {
     private static Boy boyFriend;
     private static Girl girlWithoutData;
     private static Girl girlPrettyOnly;
+    private static double amountForSpending = 300000.0;
 
     @Parameters({"wealth"})
     @BeforeClass(groups = {"mood", "money"})
@@ -27,14 +28,15 @@ public class GirlTest extends BaseTest {
     @Test(priority = 1)
     public static void checkGirlData() {
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(girlTrue.isPretty(), true);
-        softAssert.assertEquals(girlTrue.isSlimFriendGotAFewKilos(), true);
-        softAssert.assertEquals(girlTrue.getBoyFriend(), boyTrue);
+        softAssert.assertEquals(girlTrue.isPretty(), true, "Pretty of created girl doesn't coincide with the setted");
+        softAssert.assertEquals(girlTrue.isSlimFriendGotAFewKilos(), true, "Friend of created girl doesn't coincide with the setted");
+        softAssert.assertEquals(girlTrue.getBoyFriend(), boyTrue, "Boy of created girl doesn't coincide with the setted");
+        softAssert.assertAll();
     }
 
     @Test(priority = 2)
     public static void checkShoes() {
-        Assert.assertEquals(girlTrue.isBoyFriendWillBuyNewShoes(), true);
+        Assert.assertEquals(girlForTestingShoes.isBoyFriendWillBuyNewShoes(), true, "Buying shoes doesn't work");
     }
 
     @Test(priority = 1)
@@ -42,15 +44,16 @@ public class GirlTest extends BaseTest {
         girlWithoutData.setBoyFriend(boyFriend);
         girlWithoutData.setPretty(true);
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(girlWithoutData.getBoyFriend(), boyFriend);
-        softAssert.assertEquals(girlWithoutData.isPretty(), true);
+        softAssert.assertEquals(girlWithoutData.getBoyFriend(), boyFriend, "Setting of boyfriend doesn't work");
+        softAssert.assertEquals(girlWithoutData.isPretty(), true, "Setting of pretty doesn't work");
+        softAssert.assertAll();
     }
 
     @Test(groups = "money", priority = 2)
-    public static void checkSpendBoyfrienMoney() {
-        girlTrue.spendBoyFriendMoney(500000.0);
-        Assert.assertEquals(girlTrue.getBoyFriend().getWealth(), 500000.0);
+    public static void checkSpendBoyFriendMoney() {
+        double firstSumMoneyBoy = girlForSpendingBoyfriendMoney.getBoyFriend().getWealth();
+        girlForSpendingBoyfriendMoney.spendBoyFriendMoney(amountForSpending);
+        double expectedRemainingMoney = firstSumMoneyBoy - amountForSpending;
+        Assert.assertEquals(girlForSpendingBoyfriendMoney.getBoyFriend().getWealth(), expectedRemainingMoney, "Spending boyfriend money doesn't work");
     }
-
-
 }

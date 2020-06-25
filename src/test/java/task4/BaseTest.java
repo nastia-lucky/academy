@@ -12,6 +12,10 @@ public class BaseTest {
     protected static Girl girlTrue;
     protected static Girl girlFalse;
     protected static Boy boyTrue;
+    protected static Boy boyForSpendingMoneyByGirl;
+    protected static Girl girlForSpendingBoyfriendMoney;
+    protected static Girl girlForTestingShoes;
+    protected static Boy boyForBuyingShoes;
 
     @Parameters({"wealth"})
     @BeforeClass(groups = {"mood", "money"})
@@ -19,6 +23,9 @@ public class BaseTest {
         girlTrue = new Girl(true, true, boyTrue);
         boyTrue = new Boy(Month.MAY, wealth, girlTrue);
         girlFalse = new Girl(false, false);
+        boyForSpendingMoneyByGirl = new Boy(Month.MAY, wealth, girlForSpendingBoyfriendMoney);
+        girlForSpendingBoyfriendMoney = new Girl(true, true, boyForSpendingMoneyByGirl);
+        boyForBuyingShoes = new Boy(Month.MAY, 1000000, girlForTestingShoes);
+        girlForTestingShoes = new Girl(true, true, boyForBuyingShoes);
     }
-
 }
