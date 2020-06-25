@@ -30,7 +30,6 @@ public class MainAreaPage extends MainMenuPage {
     @FindBy(xpath = "//div[@class='letter__recipients letter__recipients_short']//span[@class='letter-contact']")
     private WebElement recepientMessage;
 
-
     public MainAreaPage openFirstItem() {
         firstItem.click();
         return this;

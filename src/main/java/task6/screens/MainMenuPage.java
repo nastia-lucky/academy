@@ -39,7 +39,6 @@ public class MainMenuPage extends BasePage {
         return new MainAreaPage(driver);
     }
 
-
     public WebElement getInboxMessages() {
         return inboxMessages;
     }

@@ -32,5 +32,4 @@ public class Letter {
         this.messageText = text;
         return this;
     }
-
 }

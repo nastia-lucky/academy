@@ -52,6 +52,4 @@ public class TestNegativeLogin {
         driver.close();
         driver.quit();
     }
-
-
 }

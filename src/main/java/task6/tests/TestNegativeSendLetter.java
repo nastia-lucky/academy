@@ -34,5 +34,4 @@ public class TestNegativeSendLetter {
         driver.close();
         driver.quit();
     }
-
 }

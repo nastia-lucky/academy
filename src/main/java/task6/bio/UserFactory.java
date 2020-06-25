@@ -1,7 +1,6 @@
 package task6.bio;
 
 public class UserFactory {
-
     public static User getUserWittInvalidEmail() {
         return new User()
                 .withEmail("rthjgrtgrh@mail.ru")
@@ -19,6 +18,4 @@ public class UserFactory {
                 .withEmail("a.shafalovich91@mail.ru")
                 .withPassword("behbfhgbrhb");
     }
-
-
 }
