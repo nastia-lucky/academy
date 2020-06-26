@@ -7,16 +7,12 @@ import java.util.Scanner;
 
 public class ScannerService {
 
-
     public static void main(String[] args) {
 
         Scanner scannerForConsole = new Scanner(System.in);
-
-        File file = new File(scannerForConsole.nextLine());
-
-
+        File file = new File(Thread.currentThread().getContextClassLoader().getResource(scannerForConsole.nextLine()).getFile());
         ArrayList<String> polishArray = new ArrayList<>();
-        Stack<Operation> stack = new Stack<>();
+        Stack<Operation> stack = new Stack();
 
         int calculatorType;
         try {
@@ -32,15 +28,13 @@ public class ScannerService {
                         stack.push(Operation.of(value));
                     } else if (operation == Operation.LEFT_BRACKET) {
                         stack.push(Operation.of(value));
-                    }
-                    else if (operation.isMemory()){
+                    } else if (operation.isMemory()) {
                         Operation lastOperation = stack.peek();
-                        while (!stack.isEmpty() && stack.peek().getPriority() > operation.getPriority()){
+                        while (!stack.isEmpty() && stack.peek().getPriority() > operation.getPriority()) {
                             polishArray.add(stack.pop().getSymbol());
                         }
                         polishArray.add(operation.getSymbol());
-                    }
-                    else if (operation == Operation.RIGHT_BRACKET) {
+                    } else if (operation == Operation.RIGHT_BRACKET) {
                         Operation lastItem = stack.pop();
                         while (lastItem != null && Operation.LEFT_BRACKET != lastItem) {
                             polishArray.add(lastItem.getSymbol());
@@ -61,9 +55,7 @@ public class ScannerService {
                 Operation lastItem = stack.pop();
                 polishArray.add(lastItem.getSymbol());
             }
-
             System.out.println(polishArray);
-
         } catch (FileNotFoundException e) {
             System.out.println("Something wrong with file");
             e.printStackTrace();
@@ -78,20 +70,19 @@ public class ScannerService {
 
         switch (calculatorType) {
             case 1:
-                calculator= new SimpleCalculator();
+                calculator = new SimpleCalculator();
                 break;
             case 2:
-                calculator= new MemoryCalculator(new SimpleCalculator());
+                calculator = new MemoryCalculator(new SimpleCalculator());
                 break;
             case 3:
-                calculator= new EngineerCalculator();
+                calculator = new EngineerCalculator();
                 break;
             case 4:
-                calculator= new MemoryCalculator(new EngineerCalculator());
+                calculator = new MemoryCalculator(new EngineerCalculator());
                 break;
             default:
-                System.out.println("Such calculator doesn't exist: "+calculatorType );
-
+                System.out.println("Such calculator doesn't exist: " + calculatorType);
         }
 
         try {

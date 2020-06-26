@@ -3,29 +3,29 @@ package task1;
 public class SimpleCalculator extends AbstractCalculator {
 
     @Override
-    protected void apply(Operation operation, Stack<Double> stack) throws UnsupportedCalculatorOperationException{
-        double a;
-        double b;
+    protected void apply(Operation operation, Stack<Double> stack) throws UnsupportedCalculatorOperationException {
+        double operand1;
+        double operand2;
         switch (operation) {
             case PLUS:
-                a = stack.pop();
-                b = stack.pop();
-                stack.push(a + b);
+                operand1 = stack.pop();
+                operand2 = stack.pop();
+                stack.push(operand1 + operand2);
                 break;
             case MINUS:
-                a = stack.pop();
-                b = stack.pop();
-                stack.push(b - a);
+                operand1 = stack.pop();
+                operand2 = stack.pop();
+                stack.push(operand2 - operand1);
                 break;
             case MULTI:
-                a = stack.pop();
-                b = stack.pop();
-                stack.push(a * b);
+                operand1 = stack.pop();
+                operand2 = stack.pop();
+                stack.push(operand1 * operand2);
                 break;
             case DIVISION:
-                a = stack.pop();
-                b = stack.pop();
-                stack.push(b / a);
+                operand1 = stack.pop();
+                operand2 = stack.pop();
+                stack.push(operand2 / operand1);
                 break;
             default:
                 throw new UnsupportedCalculatorOperationException();

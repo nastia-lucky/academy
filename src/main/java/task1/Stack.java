@@ -17,22 +17,21 @@ public class Stack<T> {
         return lastItem;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return storage.isEmpty();
     }
 
     public T peek() {
-        int size  = storage.size();
+        int size = storage.size();
 
-        if (size == 0){
+        if (size == 0) {
             return null;
-        };
-        return storage.get(size -1);
+        }
+        ;
+        return storage.get(size - 1);
     }
 
-    public void  clear (){
+    public void clear() {
         storage.clear();
     }
-
-
 }

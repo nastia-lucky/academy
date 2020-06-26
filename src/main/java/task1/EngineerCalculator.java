@@ -3,12 +3,12 @@ package task1;
 public class EngineerCalculator extends SimpleCalculator {
 
     @Override
-    protected void apply(Operation operation, Stack<Double> stack) throws UnsupportedCalculatorOperationException{
+    protected void apply(Operation operation, Stack<Double> stack) throws UnsupportedCalculatorOperationException {
         try {
             super.apply(operation, stack);
         } catch (UnsupportedCalculatorOperationException e) {
             double a;
-            switch (operation){
+            switch (operation) {
                 case ROOT:
                     a = stack.pop();
                     stack.push(Math.sqrt(a));
@@ -26,5 +26,4 @@ public class EngineerCalculator extends SimpleCalculator {
             }
         }
     }
-
 }

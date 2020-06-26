@@ -1,7 +1,7 @@
 package task1;
 
 public class MemoryCalculator extends AbstractCalculator {
-    public static double memory;
+    private static double memory;
     private final SimpleCalculator internalCalculator;
 
     public MemoryCalculator(SimpleCalculator internalCalculator) {
