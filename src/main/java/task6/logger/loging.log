@@ -1,0 +1,176 @@
+2020-07-10 15:05:05 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@17c68925
+2020-07-10 15:05:10 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-10 15:05:21 DEBUG My Logger:24 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 15:05:21 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 15:05:26 DEBUG My Logger:24 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 15:06:00 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 15:07:04 DEBUG My Logger:32 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-10 15:07:04 DEBUG My Logger:28 - The next element is displayed [By.xpath: //a[@id='PH_logoutLink']]
+2020-07-10 15:35:41 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@17c68925
+2020-07-10 15:35:59 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 15:36:00 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 15:36:18 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@17c68925
+2020-07-10 15:36:36 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 15:37:08 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 15:41:34 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@17c68925
+2020-07-10 15:41:35 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 15:41:42 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 15:41:42 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 15:41:47 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 15:41:47 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 15:41:50 DEBUG My Logger:36 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-10 15:41:52 DEBUG My Logger:32 - The next element is displayed [By.xpath: //a[@id='PH_logoutLink']]
+2020-07-10 16:12:44 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@7e0ea639
+2020-07-10 16:12:45 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:12:49 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:12:49 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:12:55 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:12:55 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:12:58 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:13:01 ERROR My Logger:59 - no such element: Unable to locate element: {"method":"xpath","selector":"//span[@title='Облако']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anastasiyas-MBP', ip: 'fe80:0:0:0:1443:d209:723:d366%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/y4/qlcgzsp52pj...}, goog:chromeOptions: {debuggerAddress: localhost:51195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bbc78b03efd1c48c83efbd110a2f9f82
+*** Element info: {Using=xpath, value=//span[@title='Облако']}
+2020-07-10 16:14:01 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@17c68925
+2020-07-10 16:14:03 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:14:09 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:14:09 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:14:14 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:14:15 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:14:18 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:14:23 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:15:59 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@7e0ea639
+2020-07-10 16:16:00 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:16:05 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:16:06 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:16:11 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:16:11 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:16:14 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:16:21 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:16:21 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:16:47 ERROR My Logger:59 - Expected condition failed: waiting for element found by By.xpath: //div[@data-name='create'] to be selected (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anastasiyas-MBP', ip: 'fe80:0:0:0:1443:d209:723:d366%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/y4/qlcgzsp52pj...}, goog:chromeOptions: {debuggerAddress: localhost:51694}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 898d66cf450031f219c695263784656f
+2020-07-10 16:19:47 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@7e0ea639
+2020-07-10 16:19:48 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:19:51 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:19:51 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:19:57 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:19:57 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:20:00 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:20:10 ERROR My Logger:59 - Expected condition failed: waiting for element to be clickable: By.xpath: //span[@title='Облако'] (tried for 10 second(s) with 500 milliseconds interval)
+2020-07-10 16:20:26 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@7e0ea639
+2020-07-10 16:20:27 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:20:33 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:20:33 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:20:38 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:20:38 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:20:41 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:20:55 ERROR My Logger:59 - Expected condition failed: waiting for element to be clickable: By.xpath: //span[@title='Облако'] (tried for 10 second(s) with 500 milliseconds interval)
+2020-07-10 16:21:01 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@7e0ea639
+2020-07-10 16:21:03 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:21:07 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:21:07 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:21:13 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:21:13 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:21:16 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:21:26 ERROR My Logger:59 - Expected condition failed: waiting for element to be clickable: By.xpath: //span[@title='Облако'] (tried for 10 second(s) with 500 milliseconds interval)
+2020-07-10 16:21:54 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@7e0ea639
+2020-07-10 16:21:55 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:21:59 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:21:59 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:22:04 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:22:04 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:22:07 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:22:19 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:22:19 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:22:37 ERROR My Logger:59 - Expected condition failed: waiting for element found by By.xpath: //div[@data-name='create'] to be selected (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anastasiyas-MBP', ip: 'fe80:0:0:0:1443:d209:723:d366%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/y4/qlcgzsp52pj...}, goog:chromeOptions: {debuggerAddress: localhost:52754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7473a89b61e5b1cf20258fe082491b90
+2020-07-10 16:24:50 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@534df152
+2020-07-10 16:25:08 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:25:12 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:25:12 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:25:17 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:25:19 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:25:32 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:25:54 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:30:15 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:30:30 ERROR My Logger:59 - Expected condition failed: waiting for element found by By.xpath: //div[@data-name='create'] to be selected (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anastasiyas-MBP', ip: 'fe80:0:0:0:1443:d209:723:d366%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/y4/qlcgzsp52pj...}, goog:chromeOptions: {debuggerAddress: localhost:53268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c1c189fbebda3492fc7d60051cbd9efd
+2020-07-10 16:34:28 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@534df152
+2020-07-10 16:34:29 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:34:34 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:34:34 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:34:40 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:34:40 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:34:43 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:34:52 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:39:16 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:41:50 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@534df152
+2020-07-10 16:41:52 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:41:55 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:41:56 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:42:01 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:42:01 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:42:05 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:42:09 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:42:51 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:43:08 ERROR My Logger:59 - Expected condition failed: waiting for element found by By.xpath: //div[@data-name='create'] to be selected (tried for 15 second(s) with 500 milliseconds interval)
+2020-07-10 16:43:34 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@534df152
+2020-07-10 16:43:35 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:43:38 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:43:39 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:43:44 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:43:44 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:43:47 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:43:51 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:44:10 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:44:27 ERROR My Logger:59 - Expected condition failed: waiting for element found by By.xpath: //div[@data-name='create'] to be selected (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anastasiyas-MBP', ip: 'fe80:0:0:0:1443:d209:723:d366%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/y4/qlcgzsp52pj...}, goog:chromeOptions: {debuggerAddress: localhost:54911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 446118f1c908abf2b575ab37bafc1013
+2020-07-10 16:44:40 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@534df152
+2020-07-10 16:44:42 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:44:47 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:44:47 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:44:52 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:44:53 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:44:56 DEBUG My Logger:47 - Wait for the element [By.xpath: //span[@title='Облако']] is clickable
+2020-07-10 16:44:59 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-10 16:45:21 DEBUG My Logger:55 - Waiting  for the element [By.xpath: //div[@data-name='create']] is present
+2020-07-10 16:45:37 ERROR My Logger:59 - Expected condition failed: waiting for element found by By.xpath: //div[@data-name='create'] to be selected (tried for 5 second(s) with 500 milliseconds interval)
+2020-07-10 16:47:52 INFO  My Logger:11 - Login to mailbox with user task6.bio.User@17c68925
+2020-07-10 16:47:55 DEBUG My Logger:23 - Open page by URL : [https://mail.ru/]
+2020-07-10 16:47:58 DEBUG My Logger:28 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-10 16:47:59 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:48:04 DEBUG My Logger:28 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-10 16:48:04 DEBUG My Logger:19 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-10 16:48:07 INFO  My Logger:11 - Write the message task6.bio.Letter@2a265ea9
+2020-07-10 16:48:07 DEBUG My Logger:19 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-10 16:48:08 ERROR My Logger:59 - no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='compose-button__ico']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anastasiyas-MBP', ip: 'fe80:0:0:0:1443:d209:723:d366%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/y4/qlcgzsp52pj...}, goog:chromeOptions: {debuggerAddress: localhost:55509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cc087c6b349ea2fa270aa6222b10b8b2
+*** Element info: {Using=xpath, value=//span[@class='compose-button__ico']}

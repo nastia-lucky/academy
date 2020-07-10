@@ -1,30 +1,23 @@
 package task6.services;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import task6.bio.User;
-import task6.bio.UserFactory;
+import task6.logger.Log;
 import task6.screens.MailRuLoginPage;
-
-import java.util.concurrent.TimeUnit;
+import task6.screens.MainAreaPage;
 
 public class LoginService {
 
-    public static void login(WebDriver driver) throws InterruptedException {
-        User user = UserFactory.getUserWithValidCreds();
-        MailRuLoginPage loginPage = new MailRuLoginPage(driver);
+    public static MainAreaPage login(User user) throws InterruptedException {
+        Log.logInfo("Login to mailbox with user " + user.toString());
+        MailRuLoginPage loginPage = new MailRuLoginPage();
         loginPage
                 .openPage()
                 .typeUserLogin(user.getEmail())
                 .clickSubmitButton();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         loginPage.typePassword(user.getPassword())
                 .clickSubmitButton();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-    }
-
-    public static WebDriver createChromeDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
-        return new ChromeDriver();
+        Thread.sleep(3000);
+        return new MainAreaPage();
     }
 }

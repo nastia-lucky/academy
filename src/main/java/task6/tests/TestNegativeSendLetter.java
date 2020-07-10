@@ -1,29 +1,33 @@
 package task6.tests;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import task6.Listener.TestListener;
+import task6.Utilities.Browser;
 import task6.bio.Letter;
 import task6.bio.LetterFactory;
+import task6.bio.User;
+import task6.bio.UserFactory;
 import task6.screens.NewMessagePage;
 import task6.services.LoginService;
 import task6.services.WriteCorrectLetterService;
 
+@Listeners({TestListener.class})
 public class TestNegativeSendLetter {
-    WebDriver driver;
 
     @BeforeClass
     public void setUp() throws InterruptedException {
-        driver = LoginService.createChromeDriver();
-        LoginService.login(driver);
+        User user = UserFactory.getUserWithValidCreds();
+        LoginService.login(user);
     }
 
     @Test
-    public void writeLetterWithIncorrectAddress() {
+    public void writeLetterWithIncorrectAddress() throws InterruptedException {
         Letter letter = LetterFactory.getLetterWithInvalidAddress();
-        NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(driver, letter);
+        NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(letter);
         createdLetter.clickSendButton();
         SoftAssert anassert = new SoftAssert();
         anassert.assertTrue(createdLetter.isDisplayedIncorrectEmailMessage(), "Error message is not displayed");
@@ -31,7 +35,6 @@ public class TestNegativeSendLetter {
 
     @AfterClass
     public void tearDown() {
-        driver.close();
-        driver.quit();
+        Browser.closeDriver();
     }
 }

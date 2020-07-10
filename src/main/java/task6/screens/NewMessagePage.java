@@ -1,81 +1,85 @@
 package task6.screens;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import task6.Utilities.Browser;
 
 public class NewMessagePage extends MainAreaPage {
 
-    public NewMessagePage(WebDriver driver) {
-        super(driver);
-    }
-
-    @FindBy(xpath = "//div[@class='contactsContainer--3RMuQ']//input[@type='text']")
-    private WebElement addressField;
-    @FindBy(xpath = "//div[@class='subject__wrapper--2mk6m']//input[@type='text']")
-    private WebElement subjectField;
-    @FindBy(xpath = "//div[@role='textbox']")
-    private WebElement textLetter;
-    @FindBy(xpath = "//span[@title='Отправить']")
-    private WebElement sendButton;
-    @FindBy(xpath = "//div[@data-test-id='error:invalid-addresses']//h1[contains(text(),'Присутствуют некорректные адреса' )]")
-    private WebElement incorrectAddressMessage;
-    @FindBy(xpath = "//button[@data-test-id='false']//span[contains(text(), 'Отправить')]")
-    private WebElement sendEmptyLetterButton;
-    @FindBy(xpath = "//span[@title='Сохранить']")
-    private WebElement saveButton;
-    @FindBy(xpath = "//div[@class='controls_container--17SRg']//button[@title='Закрыть']")
-    private WebElement closeButton;
-    @FindBy(xpath = "//div[@class='layer-window__container']")
-    private WebElement sentMessageLayer;
-    @FindBy(xpath = "//div[@class='layer__controls']//span[@title='Закрыть']")
-    private WebElement closeSentMessageLayerButton;
+    private static final String ADDRESS_FIELD = "//div[@class='contactsContainer--3RMuQ']//input[@type='text']";
+    private static final String SUBJECT_FIELD = "//div[@class='subject__wrapper--2mk6m']//input[@type='text']";
+    private static final String TEXT_LETTER = "//div[@role='textbox']";
+    private static final String SEND_BUTTON = "//span[@title='Отправить']";
+    private static final String INCORRECT_ADDRESS_MESSAGE = "//div[@data-test-id='error:invalid-addresses']//h1[contains(text(),'Присутствуют некорректные адреса' )]";
+    private static final String SEND_EMPTY_LETTER_BUTTON = "//button[@data-test-id='false']//span[contains(text(), 'Отправить')]";
+    private static final String SAVE_BUTTON = "//span[@title='Сохранить']";
+    private static final String CLOSE_BUTTON = "//div[@class='controls_container--17SRg']//button[@title='Закрыть']";
+    private static final String SENT_MESSAGE_LAYER = "//div[@class='layer-window__container']";
+    private static final String CLOSE_SENT_MESSAGE_LAYER_BUTTON = "//div[@class='layer__controls']//span[@title='Закрыть']";
 
     public NewMessagePage inputAddress(String address) {
-        addressField.sendKeys(address);
+        browser.typeTo(By.xpath(ADDRESS_FIELD), address);
         return this;
     }
 
     public NewMessagePage inputSubject(String subject) {
-        subjectField.sendKeys(subject);
+        browser.typeTo(By.xpath(SUBJECT_FIELD), subject);
         return this;
     }
 
     public NewMessagePage inputText(String text) {
-        textLetter.sendKeys(text);
+        browser.typeTo(By.xpath(TEXT_LETTER), text);
         return this;
     }
 
     public NewMessagePage clickSendButton() {
-        sendButton.click();
+        browser.clickElement(By.xpath(SEND_BUTTON));
         return this;
     }
 
     public boolean isDisplayedIncorrectEmailMessage() {
-        return incorrectAddressMessage.isDisplayed();
+        return browser.isElemenDisplayed(By.xpath(INCORRECT_ADDRESS_MESSAGE));
     }
 
     public NewMessagePage clickSendEmptyLetterButton() {
-        sendEmptyLetterButton.click();
+        browser.clickElement(By.xpath(SEND_EMPTY_LETTER_BUTTON));
         return this;
     }
 
     public NewMessagePage clickSaveButton() {
-        saveButton.click();
+        browser.clickElement(By.xpath(SAVE_BUTTON));
         return this;
     }
 
     public MainMenuPage clickCloseButton() {
-        closeButton.click();
-        return new MainMenuPage(driver);
+        browser.clickElement(By.xpath(CLOSE_BUTTON));
+        return new MainMenuPage();
     }
 
     public NewMessagePage clickCloseSentMessageLayerButton() {
-        closeSentMessageLayerButton.click();
+        browser.clickElement(By.xpath(CLOSE_SENT_MESSAGE_LAYER_BUTTON));
         return this;
     }
 
-    public WebElement getSentMessageLayer() {
-        return sentMessageLayer;
+    public void waitForAddressField() {
+        Browser.waitForElementToBeDisplayed(By.xpath(ADDRESS_FIELD));
+    }
+
+    public boolean isSentMessageLayerIsDisplayed() {
+        return browser.isElemenDisplayed(By.xpath(SENT_MESSAGE_LAYER));
+    }
+
+    public void waitForSentLayer() {
+        Browser.waitForElementToBeDisplayed(By.xpath(SENT_MESSAGE_LAYER));
+    }
+
+    public void waitForSubject(By by) {
+        Browser.waitForElementToBeDisplayed(by);
+    }
+
+    public WebElement getAddressField() {
+        return browser.getElement(By.xpath(ADDRESS_FIELD));
     }
 }
+
+

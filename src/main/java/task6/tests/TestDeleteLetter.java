@@ -1,43 +1,44 @@
 package task6.tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import task6.Listener.TestListener;
 import task6.bio.Letter;
 import task6.bio.LetterFactory;
+import task6.bio.User;
+import task6.bio.UserFactory;
 import task6.screens.NewMessagePage;
 import task6.services.LoginService;
 import task6.services.WriteCorrectLetterService;
 
+@Listeners({TestListener.class})
 public class TestDeleteLetter {
-    WebDriver driver;
 
     @BeforeClass
     public void setUp() throws InterruptedException {
-        driver = LoginService.createChromeDriver();
-        LoginService.login(driver);
+        User user = UserFactory.getUserWithValidCreds();
+        LoginService.login(user);
     }
+
 
     @Test
     public void deleteLetter() throws InterruptedException {
         Letter letter = LetterFactory.getValidLetter();
-        WebDriverWait wait = new WebDriverWait(driver, 20);
-        NewMessagePage page = WriteCorrectLetterService.writeCorrectLetter(driver, letter);
+        NewMessagePage page = WriteCorrectLetterService.writeCorrectLetter(letter);
         page.clickSaveButton()
                 .clickCloseButton()
                 .openDraftsMessages()
-                .moveToFirstItem();
-        wait.until(ExpectedConditions.visibilityOf(page.getCheckbox()));
-        page.clickCheckbox();
+                .waitForPickButton()
+                .clickPickButton();
+
+        //wait.until(ExpectedConditions.visibilityOf(page.getCheckbox()));
+        //page.clickCheckbox();
     }
 
-    @AfterClass
+    /*@AfterClass
     public void tearDown() {
-        driver.close();
-        driver.quit();
-    }
+       WrappedDriver.closedriver();
+    }*/
 
 }
