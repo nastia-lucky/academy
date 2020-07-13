@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="apiTesting">
+    <test name="apiTest">
+        <parameter name="api" value="6f358395a40ffad67a0bb1f631b305f7"></parameter>
+        <classes>
+            <class name="task8.tests.CoincideWithCityTest"/>
+            <class name="task8.tests.CurrentGomelWeather"/>
+            <class name="task8.tests.ForecastHumidityTest"/>
+            <class name="task8.tests.APITestWithoutApiKey"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
