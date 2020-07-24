@@ -1,6 +1,6 @@
 package task6.services;
 
-import task6.bio.User;
+import task6.businessobjects.User;
 import task6.logger.Log;
 import task6.screens.MailRuLoginPage;
 import task6.screens.MainAreaPage;
@@ -14,7 +14,7 @@ public class LoginService {
                 .openPage()
                 .typeUserLogin(user.getEmail())
                 .clickSubmitButton();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         loginPage.typePassword(user.getPassword())
                 .clickSubmitButton();
         Thread.sleep(3000);

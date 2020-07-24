@@ -1,6 +1,6 @@
 package task6.services;
 
-import task6.bio.Letter;
+import task6.businessobjects.Letter;
 import task6.logger.Log;
 import task6.screens.MainMenuPage;
 import task6.screens.NewMessagePage;
@@ -14,7 +14,7 @@ public class WriteCorrectLetterService {
         newMessage.waitForAddressField();
         newMessage.inputAddress(letter.getAddress())
                 .inputSubject(letter.getSubject())
-                .inputText(letter.getMessaheText());
+                .inputText(letter.getMessageText());
         return newMessage;
     }
 }

@@ -5,15 +5,11 @@ import task6.screens.NewMessagePage;
 
 public class PopupCheck {
 
-    public static NewMessagePage checkPopup(NewMessagePage page) {
+    public static void checkPopup() {
+        NewMessagePage newMessage = new NewMessagePage();
         Log.logInfo("Checking for sending message layer");
-        if (page.isSentMessageLayerIsDisplayed()) {
-            page.clickCloseSentMessageLayerButton();
-            return page;
-        }
-        {
-            return page;
+        if (newMessage.isSentMessageLayerIsDisplayed()) {
+            newMessage.clickCloseSentMessageLayerButton();
         }
     }
-
 }

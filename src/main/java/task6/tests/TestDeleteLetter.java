@@ -1,26 +1,37 @@
 package task6.tests;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import task6.Listener.TestListener;
-import task6.bio.Letter;
-import task6.bio.LetterFactory;
-import task6.bio.User;
-import task6.bio.UserFactory;
+import task6.businessobjects.Letter;
+import task6.businessobjects.LetterFactory;
+import task6.businessobjects.User;
+import task6.businessobjects.UserFactory;
+import task6.listener.TestListener;
+import task6.logger.Log;
+import task6.screens.MainAreaPage;
 import task6.screens.NewMessagePage;
+import task6.services.CleanUpFoldersService;
+import task6.services.CreateLettersService;
 import task6.services.LoginService;
 import task6.services.WriteCorrectLetterService;
+import task6.utilities.Browser;
 
 @Listeners({TestListener.class})
 public class TestDeleteLetter {
 
+    MainAreaPage mainPage = new MainAreaPage();
+
     @BeforeClass
     public void setUp() throws InterruptedException {
-        User user = UserFactory.getUserWithValidCreds();
+        Log.logInfo("Set Up");
+        User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
+        CreateLettersService.createAllTypesLetters();
+        CleanUpFoldersService.cleanUpFolders();
     }
-
 
     @Test
     public void deleteLetter() throws InterruptedException {
@@ -29,16 +40,14 @@ public class TestDeleteLetter {
         page.clickSaveButton()
                 .clickCloseButton()
                 .openDraftsMessages()
-                .waitForPickButton()
-                .clickPickButton();
-
-        //wait.until(ExpectedConditions.visibilityOf(page.getCheckbox()));
-        //page.clickCheckbox();
+                .clickPickButton()
+                .clickDeleteButton();
+        Assert.assertTrue(mainPage.isEmptyMessagesIconIsDisplayed(),
+                "Empty message icon isn't displayed");
     }
 
-    /*@AfterClass
+    @AfterClass
     public void tearDown() {
-       WrappedDriver.closedriver();
-    }*/
-
+        Browser.closeDriver();
+    }
 }

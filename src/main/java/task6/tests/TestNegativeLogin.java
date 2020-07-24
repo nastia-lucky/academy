@@ -1,38 +1,34 @@
 package task6.tests;
 
-import org.testng.annotations.AfterClass;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import task6.Listener.TestListener;
-import task6.Utilities.Browser;
-import task6.bio.User;
-import task6.bio.UserFactory;
+import task6.businessobjects.User;
+import task6.businessobjects.UserFactory;
+import task6.listener.TestListener;
+import task6.logger.Log;
 import task6.screens.MailRuLoginPage;
+import task6.utilities.Browser;
 
 @Listeners({TestListener.class})
 public class TestNegativeLogin {
 
- /*   @BeforeClass
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
-        driver = new ChromeDriver();
-    } */
-
     @Test
     public void incorrectLoginTest() throws InterruptedException {
-        User user = UserFactory.getUserWittInvalidEmail();
+        Log.logInfo("Login with incorrect username test is started");
+        User user = UserFactory.getUserWithInvalidEmail();
         MailRuLoginPage loginPage = new MailRuLoginPage();
         loginPage.openPage()
                 .typeUserLogin(user.getEmail())
                 .clickSubmitButton();
-        Thread.sleep(1000);
-        SoftAssert anassert = new SoftAssert();
-        anassert.assertTrue(loginPage.isIncorrectLoginMessageIsDisplayed(), "Incorrect message is not displayed");
+        Assert.assertTrue(loginPage.isIncorrectLoginMessageIsDisplayed(),
+                "Incorrect message is not displayed");
     }
 
     @Test
-    public void incorrectPasswordTest() throws InterruptedException {
+    public void incorrectPasswordTest() {
+        Log.logInfo(" Login with incorrect password test is started");
         User user = UserFactory.getUserWithInvalidPassword();
         MailRuLoginPage loginPage = new MailRuLoginPage();
         loginPage.openPage()
@@ -40,12 +36,11 @@ public class TestNegativeLogin {
                 .clickSubmitButton()
                 .typePassword(user.getPassword())
                 .clickSubmitButton();
-        Thread.sleep(1000);
-        SoftAssert anassert = new SoftAssert();
-        anassert.assertTrue(loginPage.isIncorrectPasswordMessageIsDisplayed(), "Incorrect message is not displayed");
+        Assert.assertTrue(loginPage.isIncorrectPasswordMessageIsDisplayed(),
+                "Incorrect message is not displayed");
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         Browser.closeDriver();
     }

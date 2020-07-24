@@ -8,6 +8,11 @@
             <class name="task6.tests.TestPositiveLogin"></class>
             <class name="task6.tests.TestDeleteLetter"></class>
             <class name="task6.tests.TestRequiredWriteLetterField"></class>
+            <class name="task6.tests.cloudsTest.CloudLogin"></class>
+            <class name="task6.tests.cloudsTest.CreateFolderTest"></class>
+            <class name="task6.tests.cloudsTest.RemoveFolderTest"></class>
+            <class name="task6.tests.cloudsTest.ShareLinkTest"></class>
+            <class name="task6.tests.cloudsTest.UploadFileTest"></class>
         </classes>
     </test>
 </suite>
