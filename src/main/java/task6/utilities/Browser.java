@@ -23,17 +23,17 @@ public class Browser {
     private static final int MIDDLE_WAIT = 15;
 
     private Browser() {
-        switch (browserType) {
-            case "chrome": {
-                System.setProperty(
-                        "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
-                driver = new ChromeDriver();
-                break;
-            }
-            case "firefox": {
-                System.setProperty(
-                        "webdriver.gecko.driver", "src/main/resources/task6/geckodriver");
-                driver = new FirefoxDriver();
+       switch (browserType) {
+           case "chrome": {
+               System.setProperty(
+                       "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
+               driver = new ChromeDriver();
+               break;
+           }
+           case "firefox": {
+               System.setProperty(
+                       "webdriver.gecko.driver", "src/main/resources/task6/geckodriver");
+               driver = new FirefoxDriver();
                 break;
             }
             default: {
