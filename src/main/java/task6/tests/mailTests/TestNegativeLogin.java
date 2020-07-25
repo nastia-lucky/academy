@@ -1,4 +1,4 @@
-package task6.tests;
+package task6.tests.mailTests;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +15,7 @@ import task6.utilities.Browser;
 public class TestNegativeLogin {
 
     @Test
-    public void incorrectLoginTest() throws InterruptedException {
+    public void incorrectLoginTest() {
         Log.logInfo("Login with incorrect username test is started");
         User user = UserFactory.getUserWithInvalidEmail();
         MailRuLoginPage loginPage = new MailRuLoginPage();

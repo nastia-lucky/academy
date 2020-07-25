@@ -1,4 +1,4 @@
-package task6.tests;
+package task6.tests.mailTests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

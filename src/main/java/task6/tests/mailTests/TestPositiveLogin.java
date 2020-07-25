@@ -1,4 +1,4 @@
-package task6.tests;
+package task6.tests.mailTests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Listeners;
@@ -19,11 +19,11 @@ public class TestPositiveLogin {
     public void LoginTest() throws InterruptedException {
         Log.logInfo("Positive Login Test is started");
         User validUser = UserFactory.getUserWithValidLogin();
-        MainAreaPage mainPage = LoginService.login(validUser);
+        LoginService.login(validUser);
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertEquals(mainPage.getEmail(), validUser.getEmail(),
+        softAssert.assertEquals(new MainAreaPage().getEmail(), validUser.getEmail(),
                 "Login name is not displayed");
-        softAssert.assertTrue(mainPage.isExitButtonDisplayed(),
+        softAssert.assertTrue(new MainAreaPage().isExitButtonDisplayed(),
                 "Exit button is not displayed");
         softAssert.assertAll();
     }

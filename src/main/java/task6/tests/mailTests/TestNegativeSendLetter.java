@@ -1,4 +1,4 @@
-package task6.tests;
+package task6.tests.mailTests;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -11,39 +11,29 @@ import task6.businessobjects.User;
 import task6.businessobjects.UserFactory;
 import task6.listener.TestListener;
 import task6.logger.Log;
-import task6.screens.MainAreaPage;
 import task6.screens.NewMessagePage;
-import task6.services.CleanUpFoldersService;
-import task6.services.CreateLettersService;
 import task6.services.LoginService;
 import task6.services.WriteCorrectLetterService;
 import task6.utilities.Browser;
 
 @Listeners({TestListener.class})
-public class TestDeleteLetter {
-
-    MainAreaPage mainPage = new MainAreaPage();
+public class TestNegativeSendLetter {
 
     @BeforeClass
     public void setUp() throws InterruptedException {
         Log.logInfo("Set Up");
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
-        CreateLettersService.createAllTypesLetters();
-        CleanUpFoldersService.cleanUpFolders();
     }
 
     @Test
-    public void deleteLetter() throws InterruptedException {
-        Letter letter = LetterFactory.getValidLetter();
-        NewMessagePage page = WriteCorrectLetterService.writeCorrectLetter(letter);
-        page.clickSaveButton()
-                .clickCloseButton()
-                .openDraftsMessages()
-                .clickPickButton()
-                .clickDeleteButton();
-        Assert.assertTrue(mainPage.isEmptyMessagesIconIsDisplayed(),
-                "Empty message icon isn't displayed");
+    public void writeLetterWithIncorrectAddress() throws InterruptedException {
+        Log.logInfo("Write Letter with incorrect address Test is started");
+        Letter letter = LetterFactory.getLetterWithInvalidAddress();
+        NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(letter);
+        createdLetter.clickSendButton();
+        Assert.assertTrue(createdLetter.isDisplayedIncorrectEmailMessage(),
+                "Error message is not displayed");
     }
 
     @AfterClass

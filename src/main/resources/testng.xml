@@ -1,13 +1,13 @@
 <suite name="mail ru test">
     <test name="mail.ru test">
         <classes>
-            <class name="task6.tests.TestWriteCorrectLetter">
+            <class name="task6.tests.mailTests.TestWriteCorrectLetter">
             </class>
-            <class name="task6.tests.TestNegativeLogin"></class>
-            <class name="task6.tests.TestNegativeSendLetter"></class>
-            <class name="task6.tests.TestPositiveLogin"></class>
-            <class name="task6.tests.TestDeleteLetter"></class>
-            <class name="task6.tests.TestRequiredWriteLetterField"></class>
+            <class name="task6.tests.mailTests.TestNegativeLogin"></class>
+            <class name="task6.tests.mailTests.TestNegativeSendLetter"></class>
+            <class name="task6.tests.mailTests.TestPositiveLogin"></class>
+            <class name="task6.tests.mailTests.TestDeleteLetter"></class>
+            <class name="task6.tests.mailTests.TestRequiredWriteLetterField"></class>
             <class name="task6.tests.cloudsTest.CloudLogin"></class>
             <class name="task6.tests.cloudsTest.CreateFolderTest"></class>
             <class name="task6.tests.cloudsTest.RemoveFolderTest"></class>
