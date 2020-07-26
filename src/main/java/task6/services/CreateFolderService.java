@@ -1,6 +1,6 @@
 package task6.services;
 
-import task6.businessobjects.Folder;
+import task6.bo.Folder;
 import task6.logger.Log;
 import task6.screens.CloudPage;
 

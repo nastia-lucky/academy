@@ -1,6 +1,6 @@
 package task6.services;
 
-import task6.businessobjects.Letter;
+import task6.bo.Letter;
 import task6.logger.Log;
 import task6.screens.MainMenuPage;
 import task6.screens.NewMessagePage;

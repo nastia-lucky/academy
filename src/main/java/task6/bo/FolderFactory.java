@@ -1,4 +1,4 @@
-package task6.businessobjects;
+package task6.bo;
 
 public class FolderFactory {
 

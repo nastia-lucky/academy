@@ -1,6 +1,6 @@
 package task6.services;
 
-import task6.businessobjects.User;
+import task6.bo.User;
 import task6.logger.Log;
 import task6.screens.MailRuLoginPage;
 import task6.screens.MainAreaPage;

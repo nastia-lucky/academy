@@ -17228,3 +17228,898 @@ Session ID: 8285dfcb048891db7c400c7b0e9e2ae9
 2020-07-25 11:07:56 DEBUG My Logger:16 - Open page by URL : [https://cloud.mail.ru/public/5PeU/5J5i3Wku1]
 2020-07-25 11:07:57 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='Breadcrumb__text--1Qzms']] is displayed
 2020-07-25 11:07:57 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //div[@class='Breadcrumb__text--1Qzms']]
+2020-07-25 13:29:53 INFO  My Logger:10 - Set Up is started
+2020-07-25 13:29:53 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:29:53 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:29:53 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:29:54 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:29:54 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:29:54 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:29:54 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:29:57 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:29:57 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:29:58 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:29:58 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:01 INFO  My Logger:10 - Creating all types of letters
+2020-07-25 13:30:01 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:01 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:01 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:01 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:01 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:01 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:30:01 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:02 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:02 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:02 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:02 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:02 INFO  My Logger:10 - Clicking 'Send' button
+2020-07-25 13:30:02 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Отправить']]
+2020-07-25 13:30:03 INFO  My Logger:10 - Checking for sending message layer
+2020-07-25 13:30:03 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer-window__container']] is displayed
+2020-07-25 13:30:03 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer-window__container']]
+2020-07-25 13:30:03 INFO  My Logger:10 - Clicking 'Close' button for pop-up
+2020-07-25 13:30:03 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer__controls']//span[@title='Закрыть']]
+2020-07-25 13:30:03 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:03 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:03 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:03 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:03 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:03 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:30:03 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:04 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:04 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:04 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:04 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:04 INFO  My Logger:10 - Clicking 'Save' button
+2020-07-25 13:30:04 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Сохранить']]
+2020-07-25 13:30:04 INFO  My Logger:10 - Clicking 'Close' button
+2020-07-25 13:30:04 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='controls_container--17SRg']//button[@title='Закрыть']]
+2020-07-25 13:30:04 INFO  My Logger:10 - Clean up existing messages
+2020-07-25 13:30:04 INFO  My Logger:10 - Opening inbox messages
+2020-07-25 13:30:04 DEBUG My Logger:13 - Click element located: [By.xpath: //a[@title='Входящие']]
+2020-07-25 13:30:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:05 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:05 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:05 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:05 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:05 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:30:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:30:05 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:30:05 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:05 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:05 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']] is clickable
+2020-07-25 13:30:05 INFO  My Logger:10 - Clicking 'Delete All' button
+2020-07-25 13:30:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']] is clickable
+2020-07-25 13:30:05 DEBUG My Logger:13 - Click element located: [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']]
+2020-07-25 13:30:05 INFO  My Logger:10 - Opening sent messages
+2020-07-25 13:30:05 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Отправленные']]
+2020-07-25 13:30:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:06 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:06 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:06 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:06 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:06 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:30:06 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:30:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:30:06 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:06 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:06 INFO  My Logger:10 - Opening drafts messages
+2020-07-25 13:30:06 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Черновики']]
+2020-07-25 13:30:06 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:06 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:06 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:06 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:06 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:06 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:30:06 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:30:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:30:07 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:07 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:07 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:07 INFO  My Logger:10 - Refresh page
+2020-07-25 13:30:07 INFO  My Logger:10 - Write Letter Test is started
+2020-07-25 13:30:07 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:07 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:07 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:08 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:08 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:08 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:30:08 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:09 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:09 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:09 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:09 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:09 INFO  My Logger:10 - Clicking 'Send' button
+2020-07-25 13:30:09 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Отправить']]
+2020-07-25 13:30:09 INFO  My Logger:10 - Checking for sending message layer
+2020-07-25 13:30:09 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer-window__container']] is displayed
+2020-07-25 13:30:09 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer-window__container']]
+2020-07-25 13:30:09 INFO  My Logger:10 - Clicking 'Close' button for pop-up
+2020-07-25 13:30:09 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer__controls']//span[@title='Закрыть']]
+2020-07-25 13:30:09 INFO  My Logger:10 - Opening inbox messages
+2020-07-25 13:30:09 DEBUG My Logger:13 - Click element located: [By.xpath: //a[@title='Входящие']]
+2020-07-25 13:30:10 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:10 INFO  My Logger:10 - Opening first item
+2020-07-25 13:30:10 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='llc__content']] is displayed
+2020-07-25 13:30:10 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:10 DEBUG My Logger:45 - Wait for the element [By.xpath: //h2[@class='thread__subject']] is displayed
+2020-07-25 13:30:10 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //h2[@class='thread__subject']]
+2020-07-25 13:30:10 DEBUG My Logger:33 - The attribute [title] has been got from locator [By.xpath: //div[@class='letter__author']/span[@title]]
+2020-07-25 13:30:10 INFO  My Logger:10 - Opening sent messages
+2020-07-25 13:30:10 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Отправленные']]
+2020-07-25 13:30:10 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:10 INFO  My Logger:10 - Opening first item
+2020-07-25 13:30:10 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='llc__content']] is displayed
+2020-07-25 13:30:10 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:11 DEBUG My Logger:45 - Wait for the element [By.xpath: //h2[@class='thread__subject']] is displayed
+2020-07-25 13:30:11 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //h2[@class='thread__subject']]
+2020-07-25 13:30:11 DEBUG My Logger:33 - The attribute [title] has been got from locator [By.xpath: //div[@class='letter__recipients letter__recipients_short']//span[@class='letter-contact']]
+2020-07-25 13:30:11 INFO  My Logger:10 - Login with incorrect username test is started
+2020-07-25 13:30:12 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:30:12 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:30:13 INFO  My Logger:10 - Type user login rthjgrtgrh@mail.ru
+2020-07-25 13:30:13 DEBUG My Logger:21 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:30:13 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:13 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:13 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-25 13:30:14 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-25 13:30:14 INFO  My Logger:10 -  Login with incorrect password test is started
+2020-07-25 13:30:15 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:30:15 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:30:16 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:30:16 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:30:16 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:16 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:16 INFO  My Logger:10 - Type user password behbfhgbrhb
+2020-07-25 13:30:16 DEBUG My Logger:21 - Type [behbfhgbrhb] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:30:16 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:16 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:16 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]] is clickable
+2020-07-25 13:30:16 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]]
+2020-07-25 13:30:17 INFO  My Logger:10 - Set Up
+2020-07-25 13:30:17 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:30:17 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:30:17 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:30:18 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:30:18 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:30:19 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:19 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:22 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:30:22 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:30:22 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:22 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:25 INFO  My Logger:10 - Write Letter with incorrect address Test is started
+2020-07-25 13:30:25 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:25 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:25 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:25 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:25 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:26 INFO  My Logger:10 - Inputting message address a.shafalovich91mail.ru
+2020-07-25 13:30:26 DEBUG My Logger:21 - Type [a.shafalovich91mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:26 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:26 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:26 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:26 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:27 INFO  My Logger:10 - Clicking 'Send' button
+2020-07-25 13:30:27 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Отправить']]
+2020-07-25 13:30:27 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@data-test-id='error:invalid-addresses']//h1[contains(text(),'Присутствуют некорректные адреса')]]
+2020-07-25 13:30:27 INFO  My Logger:10 - Positive Login Test is started
+2020-07-25 13:30:27 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:30:28 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:30:28 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:30:29 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:30:29 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:30:29 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:29 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:32 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:30:32 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:30:32 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:32 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:35 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-25 13:30:35 DEBUG My Logger:25 - The next element is displayed [By.xpath: //a[@id='PH_logoutLink']]
+2020-07-25 13:30:36 INFO  My Logger:10 - Set Up
+2020-07-25 13:30:36 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:30:36 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:30:36 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:30:38 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:30:38 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:30:38 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:38 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:41 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:30:41 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:30:41 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:41 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:44 INFO  My Logger:10 - Creating all types of letters
+2020-07-25 13:30:44 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:44 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:44 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:44 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:44 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:45 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:30:45 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:45 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:45 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:46 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:46 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:46 INFO  My Logger:10 - Clicking 'Send' button
+2020-07-25 13:30:46 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Отправить']]
+2020-07-25 13:30:46 INFO  My Logger:10 - Checking for sending message layer
+2020-07-25 13:30:46 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer-window__container']] is displayed
+2020-07-25 13:30:46 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer-window__container']]
+2020-07-25 13:30:46 INFO  My Logger:10 - Clicking 'Close' button for pop-up
+2020-07-25 13:30:46 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer__controls']//span[@title='Закрыть']]
+2020-07-25 13:30:46 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:46 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:46 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:46 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:46 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:46 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:30:46 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:47 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:47 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:47 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:47 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:47 INFO  My Logger:10 - Clicking 'Save' button
+2020-07-25 13:30:47 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Сохранить']]
+2020-07-25 13:30:47 INFO  My Logger:10 - Clicking 'Close' button
+2020-07-25 13:30:47 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='controls_container--17SRg']//button[@title='Закрыть']]
+2020-07-25 13:30:47 INFO  My Logger:10 - Clean up existing messages
+2020-07-25 13:30:47 INFO  My Logger:10 - Opening inbox messages
+2020-07-25 13:30:47 DEBUG My Logger:13 - Click element located: [By.xpath: //a[@title='Входящие']]
+2020-07-25 13:30:47 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:47 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:47 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:47 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:47 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:48 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:30:48 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:30:48 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:30:48 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:48 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:48 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:48 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']] is clickable
+2020-07-25 13:30:48 INFO  My Logger:10 - Clicking 'Delete All' button
+2020-07-25 13:30:48 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']] is clickable
+2020-07-25 13:30:48 DEBUG My Logger:13 - Click element located: [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']]
+2020-07-25 13:30:48 INFO  My Logger:10 - Opening sent messages
+2020-07-25 13:30:48 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Отправленные']]
+2020-07-25 13:30:48 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:48 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:48 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:48 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:48 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:48 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:30:48 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:30:48 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:30:49 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:49 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:49 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:49 INFO  My Logger:10 - Opening drafts messages
+2020-07-25 13:30:49 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Черновики']]
+2020-07-25 13:30:49 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:49 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:49 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:30:49 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:49 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:49 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:30:49 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:30:49 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:30:49 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:49 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:49 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:49 INFO  My Logger:10 - Refresh page
+2020-07-25 13:30:49 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:30:49 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:30:49 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:30:50 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:30:51 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:30:51 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:30:51 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:30:51 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:30:51 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:30:51 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:30:51 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:30:51 INFO  My Logger:10 - Clicking 'Save' button
+2020-07-25 13:30:51 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Сохранить']]
+2020-07-25 13:30:51 INFO  My Logger:10 - Clicking 'Close' button
+2020-07-25 13:30:51 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='controls_container--17SRg']//button[@title='Закрыть']]
+2020-07-25 13:30:52 INFO  My Logger:10 - Opening drafts messages
+2020-07-25 13:30:52 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Черновики']]
+2020-07-25 13:30:52 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:30:52 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:30:52 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:30:52 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:30:52 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:30:52 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:30:52 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='octopus octopus_full']] is displayed
+2020-07-25 13:30:52 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='octopus octopus_full']]
+2020-07-25 13:30:52 INFO  My Logger:10 - Set Up is started
+2020-07-25 13:30:52 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:30:53 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:30:53 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:30:54 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:30:54 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:30:55 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:55 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:30:58 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:30:58 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:30:58 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:30:58 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:01 INFO  My Logger:10 - Creating all types of letters
+2020-07-25 13:31:01 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:31:01 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:31:01 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:31:01 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:31:01 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:31:02 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:31:02 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:31:02 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:31:02 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:31:02 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:31:02 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:31:02 INFO  My Logger:10 - Clicking 'Send' button
+2020-07-25 13:31:02 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Отправить']]
+2020-07-25 13:31:02 INFO  My Logger:10 - Checking for sending message layer
+2020-07-25 13:31:02 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer-window__container']] is displayed
+2020-07-25 13:31:03 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer-window__container']]
+2020-07-25 13:31:03 INFO  My Logger:10 - Clicking 'Close' button for pop-up
+2020-07-25 13:31:03 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer__controls']//span[@title='Закрыть']]
+2020-07-25 13:31:03 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='Test positive', messageText='Test text'}
+2020-07-25 13:31:03 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:31:03 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:31:03 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:31:03 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:31:03 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:31:03 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:31:03 INFO  My Logger:10 - Inputting message subject Test positive
+2020-07-25 13:31:03 DEBUG My Logger:21 - Type [Test positive] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:31:04 INFO  My Logger:10 - Inputting message text Test text
+2020-07-25 13:31:04 DEBUG My Logger:21 - Type [Test text] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:31:04 INFO  My Logger:10 - Clicking 'Save' button
+2020-07-25 13:31:04 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Сохранить']]
+2020-07-25 13:31:04 INFO  My Logger:10 - Clicking 'Close' button
+2020-07-25 13:31:04 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='controls_container--17SRg']//button[@title='Закрыть']]
+2020-07-25 13:31:04 INFO  My Logger:10 - Clean up existing messages
+2020-07-25 13:31:04 INFO  My Logger:10 - Opening inbox messages
+2020-07-25 13:31:04 DEBUG My Logger:13 - Click element located: [By.xpath: //a[@title='Входящие']]
+2020-07-25 13:31:04 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:31:04 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:04 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:04 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:31:04 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:31:04 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:31:04 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:31:04 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:31:04 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:31:04 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:31:04 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:31:04 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']] is clickable
+2020-07-25 13:31:05 INFO  My Logger:10 - Clicking 'Delete All' button
+2020-07-25 13:31:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']] is clickable
+2020-07-25 13:31:05 DEBUG My Logger:13 - Click element located: [By.xpath: //span[text()='Очистить']//parent::span[@class='button2__wrapper']]
+2020-07-25 13:31:05 INFO  My Logger:10 - Opening sent messages
+2020-07-25 13:31:05 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Отправленные']]
+2020-07-25 13:31:05 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:31:05 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:05 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:05 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:31:05 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:31:06 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:31:06 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:31:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:31:06 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:31:06 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:31:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:31:06 INFO  My Logger:10 - Opening drafts messages
+2020-07-25 13:31:06 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Черновики']]
+2020-07-25 13:31:06 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:31:06 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:06 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:06 INFO  My Logger:10 - Clicking first item from messages
+2020-07-25 13:31:06 DEBUG My Logger:13 - Click element located: [By.xpath: //button[contains(@class, 'll-av_size_common')]]
+2020-07-25 13:31:06 INFO  My Logger:10 - Clicking 'Select All' button
+2020-07-25 13:31:06 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@title='Выделить все']] is clickable
+2020-07-25 13:31:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Выделить все']]
+2020-07-25 13:31:06 INFO  My Logger:10 - Clicking 'Delete' button
+2020-07-25 13:31:06 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Удалить']] is displayed
+2020-07-25 13:31:06 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Удалить']]
+2020-07-25 13:31:06 INFO  My Logger:10 - Refresh page
+2020-07-25 13:31:07 INFO  My Logger:10 - Write Letters With Required Fields Test is started
+2020-07-25 13:31:07 INFO  My Logger:10 - Write the message Letter{address='a.shafalovich91@mail.ru', subject='', messageText=''}
+2020-07-25 13:31:07 INFO  My Logger:10 - Clicking 'Write Letter' button
+2020-07-25 13:31:07 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@class='compose-button__ico']] is clickable
+2020-07-25 13:31:08 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@class='compose-button__ico']]
+2020-07-25 13:31:08 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']] is displayed
+2020-07-25 13:31:08 INFO  My Logger:10 - Inputting message address a.shafalovich91@mail.ru
+2020-07-25 13:31:08 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //div[@class='contactsContainer--3RMuQ']//input[@type='text']]
+2020-07-25 13:31:08 INFO  My Logger:10 - Inputting message subject 
+2020-07-25 13:31:08 DEBUG My Logger:21 - Type [] to element located [By.xpath: //div[@class='subject__wrapper--2mk6m']//input[@type='text']]
+2020-07-25 13:31:08 INFO  My Logger:10 - Inputting message text 
+2020-07-25 13:31:08 DEBUG My Logger:21 - Type [] to element located [By.xpath: //div[@role='textbox']]
+2020-07-25 13:31:08 INFO  My Logger:10 - Clicking 'Send' button
+2020-07-25 13:31:08 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Отправить']]
+2020-07-25 13:31:09 INFO  My Logger:10 - Clicking 'Send Empty Letter' button
+2020-07-25 13:31:09 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@data-test-id='false']//span[contains(text(), 'Отправить')]]
+2020-07-25 13:31:09 INFO  My Logger:10 - Checking for sending message layer
+2020-07-25 13:31:09 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer-window__container']] is displayed
+2020-07-25 13:31:09 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer-window__container']]
+2020-07-25 13:31:09 INFO  My Logger:10 - Clicking 'Close' button for pop-up
+2020-07-25 13:31:09 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer__controls']//span[@title='Закрыть']]
+2020-07-25 13:31:09 INFO  My Logger:10 - Opening inbox messages
+2020-07-25 13:31:09 DEBUG My Logger:13 - Click element located: [By.xpath: //a[@title='Входящие']]
+2020-07-25 13:31:09 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:31:09 INFO  My Logger:10 - Opening first item
+2020-07-25 13:31:09 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='llc__content']] is displayed
+2020-07-25 13:31:09 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:09 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='thread__subject-line']//h2[contains(text(), 'Без темы')]] is displayed
+2020-07-25 13:31:10 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='thread__subject-line']//h2[contains(text(), 'Без темы')]]
+2020-07-25 13:31:10 INFO  My Logger:10 - Opening sent messages
+2020-07-25 13:31:10 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='nav-folders']//a[@title='Отправленные']]
+2020-07-25 13:31:10 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[@class='llc__content']] is clickable
+2020-07-25 13:31:10 INFO  My Logger:10 - Opening first item
+2020-07-25 13:31:10 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='llc__content']] is displayed
+2020-07-25 13:31:10 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='llc__content']]
+2020-07-25 13:31:10 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='thread__subject-line']//h2[contains(text(), 'Self:')]] is displayed
+2020-07-25 13:31:10 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='thread__subject-line']//h2[contains(text(), 'Self:')]]
+2020-07-25 13:31:10 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:31:11 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:31:11 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:31:12 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:31:12 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:31:13 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:13 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:16 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:31:16 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:31:16 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:16 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:19 INFO  My Logger:10 - Open cloud
+2020-07-25 13:31:19 INFO  My Logger:10 - Opening cloud
+2020-07-25 13:31:19 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Облако']] is displayed
+2020-07-25 13:31:19 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-25 13:31:19 INFO  My Logger:10 - Switching to the new tab
+2020-07-25 13:31:19 DEBUG My Logger:45 - Wait for the element [By.xpath: //img[@title='Облако Mail.ru']] is displayed
+2020-07-25 13:31:22 DEBUG My Logger:25 - The next element is displayed [By.xpath: //img[@title='Облако Mail.ru']]
+2020-07-25 13:31:22 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:31:22 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:31:22 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:31:24 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:31:24 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:31:24 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:24 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:27 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:31:27 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:31:27 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:27 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:30 INFO  My Logger:10 - Clean up existing cloud folders
+2020-07-25 13:31:30 INFO  My Logger:10 - Opening cloud
+2020-07-25 13:31:30 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Облако']] is displayed
+2020-07-25 13:31:30 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-25 13:31:30 INFO  My Logger:10 - Switching to the new tab
+2020-07-25 13:31:30 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='DataListItemThumb__root--3TJe9']]
+2020-07-25 13:31:33 INFO  My Logger:10 - Clicking 'Select All' confirm button
+2020-07-25 13:31:33 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='selectAll']]
+2020-07-25 13:31:33 INFO  My Logger:10 - Clicking 'Delete All' confirm button
+2020-07-25 13:31:33 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@data-name='remove']] is displayed
+2020-07-25 13:31:33 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='remove']]
+2020-07-25 13:31:33 INFO  My Logger:10 - Clicking 'Delete All' confirm button
+2020-07-25 13:31:33 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@data-name='remove']]
+2020-07-25 13:31:33 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer_trashbin-tutorial']] is displayed
+2020-07-25 13:31:34 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer_trashbin-tutorial']]
+2020-07-25 13:31:34 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer_trashbin-tutorial']//button[@data-name='close']]
+2020-07-25 13:31:34 INFO  My Logger:10 - Created folderFolder{name='New Test Folder'}
+2020-07-25 13:31:34 INFO  My Logger:10 - Clicking 'Create' button
+2020-07-25 13:31:34 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='create']]
+2020-07-25 13:31:34 INFO  My Logger:10 - Clicking 'Create Folder' button
+2020-07-25 13:31:34 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='createFolder']]
+2020-07-25 13:31:34 INFO  My Logger:10 - Inputting folder name New Test Folder
+2020-07-25 13:31:34 DEBUG My Logger:21 - Type [New Test Folder] to element located [By.xpath: //input[@placeholder='Введите имя папки']]
+2020-07-25 13:31:34 INFO  My Logger:10 - Clicking 'Create Folder' confirm button
+2020-07-25 13:31:34 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@class='ui fluid primary button']]
+2020-07-25 13:31:34 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='FileIcon__icon--21fhF']] is displayed
+2020-07-25 13:31:35 INFO  My Logger:10 - Clicking 'My files' button
+2020-07-25 13:31:35 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@bem-id='21']] is clickable
+2020-07-25 13:31:35 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@bem-id='21']]
+2020-07-25 13:31:35 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='Name__name--13u3t']] is displayed
+2020-07-25 13:31:35 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //div[@class='Name__name--13u3t']]
+2020-07-25 13:31:35 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:31:36 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:31:36 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:31:37 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:31:37 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:31:37 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:37 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:40 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:31:40 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:31:41 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:41 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:44 INFO  My Logger:10 - Clean up existing cloud folders
+2020-07-25 13:31:44 INFO  My Logger:10 - Opening cloud
+2020-07-25 13:31:44 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Облако']] is displayed
+2020-07-25 13:31:44 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-25 13:31:44 INFO  My Logger:10 - Switching to the new tab
+2020-07-25 13:31:44 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='DataListItemThumb__root--3TJe9']]
+2020-07-25 13:31:46 INFO  My Logger:10 - Clicking 'Select All' confirm button
+2020-07-25 13:31:46 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='selectAll']]
+2020-07-25 13:31:46 INFO  My Logger:10 - Clicking 'Delete All' confirm button
+2020-07-25 13:31:46 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@data-name='remove']] is displayed
+2020-07-25 13:31:47 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='remove']]
+2020-07-25 13:31:47 INFO  My Logger:10 - Clicking 'Delete All' confirm button
+2020-07-25 13:31:47 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@data-name='remove']]
+2020-07-25 13:31:47 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer_trashbin-tutorial']] is displayed
+2020-07-25 13:31:47 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer_trashbin-tutorial']]
+2020-07-25 13:31:47 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='layer_trashbin-tutorial']//button[@data-name='close']]
+2020-07-25 13:31:47 INFO  My Logger:10 - Created folderFolder{name='New Test Folder'}
+2020-07-25 13:31:47 INFO  My Logger:10 - Clicking 'Create' button
+2020-07-25 13:31:47 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='create']]
+2020-07-25 13:31:48 INFO  My Logger:10 - Clicking 'Create Folder' button
+2020-07-25 13:31:48 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='createFolder']]
+2020-07-25 13:31:48 INFO  My Logger:10 - Inputting folder name New Test Folder
+2020-07-25 13:31:48 DEBUG My Logger:21 - Type [New Test Folder] to element located [By.xpath: //input[@placeholder='Введите имя папки']]
+2020-07-25 13:31:48 INFO  My Logger:10 - Clicking 'Create Folder' confirm button
+2020-07-25 13:31:48 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@class='ui fluid primary button']]
+2020-07-25 13:31:48 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='FileIcon__icon--21fhF']] is displayed
+2020-07-25 13:31:48 INFO  My Logger:10 - Clicking 'My files' button
+2020-07-25 13:31:48 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@bem-id='21']] is clickable
+2020-07-25 13:31:48 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@bem-id='21']]
+2020-07-25 13:31:48 INFO  My Logger:10 - Clicking on created folder
+2020-07-25 13:31:48 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@class='Name__name--13u3t']]
+2020-07-25 13:31:49 INFO  My Logger:10 - Clicking 'Delete All' confirm button
+2020-07-25 13:31:49 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@data-name='remove']] is displayed
+2020-07-25 13:31:49 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='remove']]
+2020-07-25 13:31:49 INFO  My Logger:10 - Clicking 'Delete All' confirm button
+2020-07-25 13:31:49 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@data-name='remove']]
+2020-07-25 13:31:49 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='layer_trashbin-tutorial']] is displayed
+2020-07-25 13:31:49 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='layer_trashbin-tutorial']]
+2020-07-25 13:31:49 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='Name__name--13u3t']]
+2020-07-25 13:31:49 INFO  My Logger:10 - removeFolder test failed
+2020-07-25 13:31:49 INFO  My Logger:10 - Login to mailbox with user User{email='a.shafalovich91@mail.ru', password='nastusha1213'}
+2020-07-25 13:31:50 INFO  My Logger:10 - Opening mailRu page
+2020-07-25 13:31:50 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-25 13:31:51 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-25 13:31:51 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-25 13:31:52 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:52 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:55 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-25 13:31:55 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-25 13:31:55 INFO  My Logger:10 - Clicking submit button
+2020-07-25 13:31:55 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-25 13:31:58 INFO  My Logger:10 - Clean up existing cloud folders
+2020-07-25 13:31:58 INFO  My Logger:10 - Opening cloud
+2020-07-25 13:31:58 DEBUG My Logger:45 - Wait for the element [By.xpath: //span[@title='Облако']] is displayed
+2020-07-25 13:31:58 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@title='Облако']]
+2020-07-25 13:31:59 INFO  My Logger:10 - Switching to the new tab
+2020-07-25 13:31:59 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[@class='DataListItemThumb__root--3TJe9']]
+2020-07-25 13:32:11 INFO  My Logger:10 - Created folderFolder{name='New Test Folder'}
+2020-07-25 13:32:11 INFO  My Logger:10 - Clicking 'Create' button
+2020-07-25 13:32:11 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='create']]
+2020-07-25 13:32:11 INFO  My Logger:10 - Clicking 'Create Folder' button
+2020-07-25 13:32:11 DEBUG My Logger:13 - Click element located: [By.xpath: //div[@data-name='createFolder']]
+2020-07-25 13:32:11 INFO  My Logger:10 - Inputting folder name New Test Folder
+2020-07-25 13:32:11 DEBUG My Logger:21 - Type [New Test Folder] to element located [By.xpath: //input[@placeholder='Введите имя папки']]
+2020-07-25 13:32:11 INFO  My Logger:10 - Clicking 'Create Folder' confirm button
+2020-07-25 13:32:11 DEBUG My Logger:13 - Click element located: [By.xpath: //button[@class='ui fluid primary button']]
+2020-07-25 13:32:11 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='FileIcon__icon--21fhF']] is displayed
+2020-07-25 13:32:12 INFO  My Logger:10 - Clicking 'My files' button
+2020-07-25 13:32:12 DEBUG My Logger:41 - Wait for the element [By.xpath: //span[@bem-id='21']] is clickable
+2020-07-25 13:32:12 DEBUG My Logger:13 - Click element located: [By.xpath: //span[@bem-id='21']]
+2020-07-25 13:32:12 INFO  My Logger:10 - Right click mouse on created item
+2020-07-25 13:32:12 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='Name__name--13u3t']] is displayed
+2020-07-25 13:32:12 DEBUG My Logger:49 - Right click mouse on the element [By.xpath: //div[@class='Name__name--13u3t']]
+2020-07-25 13:32:12 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[contains(text(), 'Открыть доступ по ссылке')]] is displayed
+2020-07-25 13:32:12 INFO  My Logger:10 - Clicking on link for sharing
+2020-07-25 13:32:12 DEBUG My Logger:13 - Click element located: [By.xpath: //div[contains(text(), 'Открыть доступ по ссылке')]]
+2020-07-25 13:32:12 DEBUG My Logger:45 - Wait for the element [By.xpath: //input[@title='Скопировать']] is displayed
+2020-07-25 13:32:13 DEBUG My Logger:33 - The attribute [value] has been got from locator [By.xpath: //input[@title='Скопировать']]
+2020-07-25 13:32:13 INFO  My Logger:10 - Switching to the new tab
+2020-07-25 13:32:13 INFO  My Logger:10 - Opening link in new tab https://cloud.mail.ru/public/5wxv/4aPPNUt8v
+2020-07-25 13:32:13 DEBUG My Logger:16 - Open page by URL : [https://cloud.mail.ru/public/5wxv/4aPPNUt8v]
+2020-07-25 13:32:14 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[@class='Breadcrumb__text--1Qzms']] is displayed
+2020-07-25 13:32:14 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //div[@class='Breadcrumb__text--1Qzms']]
+2020-07-26 12:10:34 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:10:34 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:10:35 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:10:35 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:10:36 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:10:36 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:10:36 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:10:36 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:10:36 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:10:36 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:10:36 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:11:08 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:11:08 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:11:09 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:11:09 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:11:10 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:11:10 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:11:10 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:11:10 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:11:10 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:11:10 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:11:10 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:12:37 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:12:37 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:12:39 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:12:39 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:12:39 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:12:39 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:12:39 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:12:39 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:12:39 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:12:39 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:12:39 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:25:22 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:25:22 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:25:24 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:25:24 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:25:24 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:25:24 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:25:24 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:25:24 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:25:24 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:25:24 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:25:24 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:25:52 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:25:52 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:25:54 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:25:54 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:25:54 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:25:54 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:25:54 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:25:54 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:25:54 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:25:54 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:25:54 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:26:29 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:26:29 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:26:30 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:26:30 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:26:30 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:26:30 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:26:31 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:26:31 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:26:31 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:29:59 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:29:59 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:30:00 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:30:00 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:30:28 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:30:28 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:30:29 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:30:29 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:32:49 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:32:49 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:32:56 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:32:56 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:32:56 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:32:56 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:32:56 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:32:56 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:32:57 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:32:57 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:32:57 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:45:46 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:45:47 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:45:48 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:45:48 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:45:48 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:45:48 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:45:48 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:45:48 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:45:48 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:45:48 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:45:48 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:46:07 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:46:07 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:46:09 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:46:09 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:46:09 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:46:09 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:46:09 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:46:09 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:46:09 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:46:09 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:46:09 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:46:57 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:46:57 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:46:58 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:46:58 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:46:58 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:46:58 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:46:59 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:46:59 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:46:59 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:46:59 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:46:59 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 12:47:50 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 12:47:50 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 12:47:51 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 12:47:51 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 12:47:51 INFO  My Logger:10 - Clicking submit button
+2020-07-26 12:47:51 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 12:47:51 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 12:47:51 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 12:47:52 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 13:00:16 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 13:00:16 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 13:00:17 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 13:00:17 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 13:00:18 INFO  My Logger:10 - Clicking submit button
+2020-07-26 13:00:18 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 13:00:18 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 13:00:18 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 13:00:18 INFO  My Logger:10 - Clicking submit button
+2020-07-26 13:00:18 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 13:00:18 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 13:00:19 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 13:00:19 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 13:00:20 INFO  My Logger:10 - Type user login rthjgrtgrh@mail.ru
+2020-07-26 13:00:20 DEBUG My Logger:21 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 13:00:20 INFO  My Logger:10 - Clicking submit button
+2020-07-26 13:00:20 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 13:00:21 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-26 13:00:21 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-26 14:14:46 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:14:46 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:14:47 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:14:47 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:14:48 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:14:48 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:14:48 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 14:14:48 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 14:14:48 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:14:48 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:14:48 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 14:14:49 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:14:49 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:14:51 INFO  My Logger:10 - Type user login rthjgrtgrh@mail.ru
+2020-07-26 14:14:51 DEBUG My Logger:21 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:14:51 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:14:51 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:14:51 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-26 14:14:51 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-26 14:20:32 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:20:32 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:20:33 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:20:33 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:20:33 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:20:33 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:20:33 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 14:20:33 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 14:20:34 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:20:34 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:20:34 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 14:20:35 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:20:35 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:20:35 INFO  My Logger:10 - Type user login rthjgrtgrh@mail.ru
+2020-07-26 14:20:35 DEBUG My Logger:21 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:20:45 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:20:45 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:20:48 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:20:48 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:21:10 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:21:10 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:21:12 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:21:12 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:21:12 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:12 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:12 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 14:21:12 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 14:21:12 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:12 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:13 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 14:21:14 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:21:14 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:21:15 INFO  My Logger:10 - Type user login rthjgrtgrh@mail.ru
+2020-07-26 14:21:15 DEBUG My Logger:21 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:21:15 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:15 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:15 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-26 14:21:16 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-26 14:21:17 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:21:17 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:21:18 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:21:18 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:21:18 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:18 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:19 INFO  My Logger:10 - Type user password behbfhgbrhb
+2020-07-26 14:21:19 DEBUG My Logger:21 - Type [behbfhgbrhb] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 14:21:19 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:19 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:19 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]] is clickable
+2020-07-26 14:21:19 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]]
+2020-07-26 14:21:52 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:21:52 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:21:53 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:21:53 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:21:54 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:54 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:54 INFO  My Logger:10 - Type user password nastusha1213
+2020-07-26 14:21:54 DEBUG My Logger:21 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 14:21:55 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:55 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:55 DEBUG My Logger:29 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-26 14:21:56 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:21:56 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:21:57 INFO  My Logger:10 - Type user login rthjgrtgrh@mail.ru
+2020-07-26 14:21:57 DEBUG My Logger:21 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:21:57 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:21:57 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:21:57 DEBUG My Logger:45 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-26 14:21:58 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-26 14:21:59 INFO  My Logger:10 - Opening mailRu page
+2020-07-26 14:21:59 DEBUG My Logger:16 - Open page by URL : [https://mail.ru/]
+2020-07-26 14:22:00 INFO  My Logger:10 - Type user login a.shafalovich91@mail.ru
+2020-07-26 14:22:00 DEBUG My Logger:21 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-26 14:22:00 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:22:00 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:22:00 INFO  My Logger:10 - Type user password behbfhgbrhb
+2020-07-26 14:22:00 DEBUG My Logger:21 - Type [behbfhgbrhb] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-26 14:22:00 INFO  My Logger:10 - Clicking submit button
+2020-07-26 14:22:00 DEBUG My Logger:13 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-26 14:22:00 DEBUG My Logger:41 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]] is clickable
+2020-07-26 14:22:01 DEBUG My Logger:25 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]]
+2020-07-27 00:35:22 INFO  My Logger:11 - Opening mailRu page
+2020-07-27 00:35:22 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-27 00:35:24 INFO  My Logger:11 - Type user login a.shafalovich91@mail.ru
+2020-07-27 00:35:24 DEBUG My Logger:23 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-27 00:35:24 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:35:24 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:35:24 INFO  My Logger:11 - Type user password nastusha1213
+2020-07-27 00:35:24 DEBUG My Logger:23 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-27 00:35:24 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:35:24 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:35:24 DEBUG My Logger:31 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-27 00:35:26 INFO  My Logger:11 - Opening mailRu page
+2020-07-27 00:35:26 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-27 00:35:27 INFO  My Logger:11 - Type user login rthjgrtgrh@mail.ru
+2020-07-27 00:35:27 DEBUG My Logger:23 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-27 00:35:27 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:35:27 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:35:27 DEBUG My Logger:43 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-27 00:35:27 DEBUG My Logger:27 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-27 00:35:29 INFO  My Logger:11 - Opening mailRu page
+2020-07-27 00:35:29 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-27 00:35:30 INFO  My Logger:11 - Type user login a.shafalovich91@mail.ru
+2020-07-27 00:35:30 DEBUG My Logger:23 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-27 00:35:30 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:35:31 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:35:31 INFO  My Logger:11 - Type user password behbfhgbrhb
+2020-07-27 00:35:31 DEBUG My Logger:23 - Type [behbfhgbrhb] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-27 00:35:31 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:35:31 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:35:31 DEBUG My Logger:39 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]] is clickable
+2020-07-27 00:35:31 DEBUG My Logger:27 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]]
+2020-07-27 00:39:20 INFO  My Logger:11 - Opening mailRu page
+2020-07-27 00:39:20 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-27 00:39:21 INFO  My Logger:11 - Type user login a.shafalovich91@mail.ru
+2020-07-27 00:39:21 DEBUG My Logger:23 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-27 00:39:21 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:39:21 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:39:21 INFO  My Logger:11 - Type user password nastusha1213
+2020-07-27 00:39:21 DEBUG My Logger:23 - Type [nastusha1213] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-27 00:39:22 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:39:22 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:39:22 DEBUG My Logger:31 - The text has been got by locator [By.xpath: //i[@id='PH_user-email']]
+2020-07-27 00:39:23 INFO  My Logger:11 - Opening mailRu page
+2020-07-27 00:39:23 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-27 00:39:24 INFO  My Logger:11 - Type user login rthjgrtgrh@mail.ru
+2020-07-27 00:39:24 DEBUG My Logger:23 - Type [rthjgrtgrh@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-27 00:39:24 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:39:24 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:39:24 DEBUG My Logger:43 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя ящика')]] is displayed
+2020-07-27 00:39:24 DEBUG My Logger:27 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя ящика')]]
+2020-07-27 00:39:25 INFO  My Logger:11 - Opening mailRu page
+2020-07-27 00:39:25 DEBUG My Logger:19 - Open page by URL : [https://mail.ru/]
+2020-07-27 00:39:27 INFO  My Logger:11 - Type user login a.shafalovich91@mail.ru
+2020-07-27 00:39:27 DEBUG My Logger:23 - Type [a.shafalovich91@mail.ru] to element located [By.xpath: //input[@id='mailbox:login']]
+2020-07-27 00:39:27 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:39:27 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:39:27 INFO  My Logger:11 - Type user password behbfhgbrhb
+2020-07-27 00:39:27 DEBUG My Logger:23 - Type [behbfhgbrhb] to element located [By.xpath: //input[@id='mailbox:password']]
+2020-07-27 00:39:27 INFO  My Logger:11 - Clicking submit button
+2020-07-27 00:39:27 DEBUG My Logger:15 - Click element located: [By.xpath: //input[@type='submit']]
+2020-07-27 00:39:28 DEBUG My Logger:39 - Wait for the element [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]] is clickable
+2020-07-27 00:39:28 DEBUG My Logger:27 - The next element is displayed [By.xpath: //div[contains(text(), 'Неверное имя или пароль')]]

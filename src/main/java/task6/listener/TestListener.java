@@ -53,9 +53,12 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext iTestContext) {
+        System.out.println();
+        Log.logInfo(iTestContext.getName() + " started");
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
+        Log.logInfo(iTestContext.getName() + " finished");
     }
 }

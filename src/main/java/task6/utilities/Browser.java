@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,7 +22,7 @@ public class Browser {
     private static final int MIDDLE_WAIT = 15;
 
     private Browser() {
-       switch (browserType) {
+       /*switch (browserType) {
            case "chrome": {
                System.setProperty(
                        "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
@@ -39,7 +38,10 @@ public class Browser {
             default: {
                 System.out.println("I don't know such browser type");
             }
-        }
+        }*/
+        System.setProperty(
+                "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
     }
 

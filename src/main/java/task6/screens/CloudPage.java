@@ -18,12 +18,12 @@ public class CloudPage extends BasePage {
     private static final By MY_FILES_BUTTON = By.xpath("//span[@bem-id='21']");
     private static final By TRASH_POPUP = By.xpath("//div[@class='layer_trashbin-tutorial']");
     private static final By TRASH_POPUP_CLOSE_BUTTON = By.xpath("//div[@class='layer_trashbin-tutorial']//button[@data-name='close']");
-    private static final By FILE_ITEM = By.xpath("//div[@class='b-nav__group__list']//span[@class='b-nav__item__text']");
+    //private static final By FILE_ITEM = By.xpath("//div[@class='b-nav__group__list']//span[@class='b-nav__item__text']");
     private static final By UPLOAD_BUTTON = By.xpath("//div[@data-name='upload']");
     private static final By UPLOAD_FILE_BUTTON = By.xpath("//input[@type='file' and @name='files' and @class='layer_upload__controls__input' ]");
     private static final By EMPTY_FOLDER_ICON = By.xpath("//div[@class='FileIcon__icon--21fhF']");
     private static final By CREATED_ITEM = By.xpath("//div[@class='Name__name--13u3t']");
-    private static final By LINK_BUTTON = By.xpath("//div[@class='DataListItemThumb__weblink--30Uyy']");
+    //private static final By LINK_BUTTON = By.xpath("//div[@class='DataListItemThumb__weblink--30Uyy']");
     private static final By OPEN_LINK_PUBLICITY = By.xpath("//div[contains(text(), 'Открыть доступ по ссылке')]");
     private static final By COPY_LINK = By.xpath("//input[@title='Скопировать']");
     private static final By SHARED_FOLDER = By.xpath("//div[@class='Breadcrumb__text--1Qzms']");
@@ -96,7 +96,6 @@ public class CloudPage extends BasePage {
     public void clickTrashPopUpCloseButton() {
         browser.clickElement(TRASH_POPUP_CLOSE_BUTTON);
     }
-
 
     public CloudPage clickUploadButton() {
         Log.logInfo("Clicking 'Upload' button");

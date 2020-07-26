@@ -6,16 +6,18 @@ import org.openqa.selenium.By;
 public class Log {
 
     private static Logger logger = Logger.getLogger("My Logger");
+
     public static void logInfo(String message) {
         logger.info(message);
     }
+
     public static void logClick(By by) {
         logger.debug(String.format("Click element located: [%s]", by));
     }
+
     public static void logGetUrl(String url) {
         logger.debug(String.format("Open page by URL : [%s]", url));
     }
-
 
     public static void logTypeTo(By by, String value) {
         logger.debug(String.format("Type [%s] to element located [%s]", value, by));
@@ -31,10 +33,6 @@ public class Log {
 
     public static void logGetAttribute(By by, String attribute) {
         logger.debug(String.format("The attribute [%s] has been got from locator [%s]", attribute, by));
-    }
-
-    public static void logGetElement(By by) {
-        logger.debug(String.format("The element has been got from locator [%s]", by));
     }
 
     public static void logWaitForElementToBeClickable(By by) {
