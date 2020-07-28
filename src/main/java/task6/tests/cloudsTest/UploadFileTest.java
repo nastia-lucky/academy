@@ -17,10 +17,10 @@ import task6.utilities.Browser;
 public class UploadFileTest {
 
     CloudPage cloudPage = new CloudPage();
-    String file = "/Users/anastasiyashafalovich/IdeaProjects/academy/src/main/java/task6/bio/TestFile";
+    String file = "/Users/anastasiyashafalovich/IdeaProjects/academy/src/main/resources/TestFile";
 
     @BeforeClass
-    public static void setUp() throws InterruptedException {
+    public static void setUp() {
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
         OpenCloudService.openCloud();

@@ -7,17 +7,15 @@ import task6.screens.MainAreaPage;
 
 public class LoginService {
 
-    public static MainAreaPage login(User user) throws InterruptedException {
+    public static MainAreaPage login(User user) {
         Log.logInfo("Login to mailbox with user " + user.toString());
         MailRuLoginPage loginPage = new MailRuLoginPage();
         loginPage
                 .openPage()
                 .typeUserLogin(user.getEmail())
                 .clickSubmitButton();
-        Thread.sleep(3000);
         loginPage.typePassword(user.getPassword())
-                .clickSubmitButton();
-        Thread.sleep(3000);
+                .clickSubmitPasswordButton();
         return new MainAreaPage();
     }
 }

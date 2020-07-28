@@ -20,7 +20,7 @@ import task6.utilities.Browser;
 public class TestWriteCorrectLetter {
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         Log.logInfo("Set Up is started");
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
@@ -30,7 +30,7 @@ public class TestWriteCorrectLetter {
     }
 
     @Test
-    public void writeLetter() throws InterruptedException {
+    public void writeLetter() {
         Log.logInfo("Write Letter Test is started");
         Letter letter = LetterFactory.getValidLetter();
         NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(letter);

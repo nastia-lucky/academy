@@ -21,7 +21,7 @@ public class RemoveFolderTest {
     CloudPage cloudPage = new CloudPage();
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
         CleanUpCloudService.cleanUpFolders();
@@ -38,7 +38,7 @@ public class RemoveFolderTest {
         if (cloudPage.isTrashPopupDisplayed()) {
             cloudPage.clickTrashPopUpCloseButton();
         }
-        Assert.assertFalse(cloudPage.createdItemIsDisplayedAfterDeleting(),
+        Assert.assertTrue(cloudPage.createdItemIsNotExist(),
                 "Created item is still displayed");
     }
 

@@ -7,7 +7,7 @@ import task6.screens.NewMessagePage;
 
 public class WriteCorrectLetterService {
 
-    public static NewMessagePage writeCorrectLetter(Letter letter) throws InterruptedException {
+    public static NewMessagePage writeCorrectLetter(Letter letter) {
         Log.logInfo("Write the message " + letter.toString());
         MainMenuPage mainMenu = new MainMenuPage();
         NewMessagePage newMessage = mainMenu.clickWriteLetterButton();

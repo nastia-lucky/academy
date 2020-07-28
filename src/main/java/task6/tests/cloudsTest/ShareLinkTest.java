@@ -22,7 +22,7 @@ public class ShareLinkTest {
     CloudPage cloudPage = new CloudPage();
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
         CleanUpCloudService.cleanUpFolders();
@@ -35,8 +35,7 @@ public class ShareLinkTest {
         cloudPage.clickMyFilesButton()
                 .rightClickMouseCreatedItem()
                 .clickOpenLinkPublicityButton();
-        String linkName = cloudPage.getLink();
-        cloudPage.switchToNewTab().openLinkInNewTab(linkName);
+        cloudPage.switchToNewTab().openLinkInNewTab(cloudPage.getLink());
         Assert.assertEquals(cloudPage.getNameSharedFolder(), folder.getName(),
                 "Name of created item doesn't coincide with shared link");
     }

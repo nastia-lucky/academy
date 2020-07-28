@@ -22,7 +22,7 @@ public class CreateFolderTest {
     CloudPage cloudPage = new CloudPage();
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
         CleanUpCloudService.cleanUpFolders();

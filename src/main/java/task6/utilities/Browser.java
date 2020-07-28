@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,29 +19,29 @@ public class Browser {
     public static String browserType;
     private static WebDriver driver;
     private static Browser browser;
-    private static final int LONG_WAIT = 15;
+    private static final int LONG_WAIT = 100;
     private static final int MIDDLE_WAIT = 15;
 
     private Browser() {
-       /*switch (browserType) {
-           case "chrome": {
-               System.setProperty(
-                       "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
-               driver = new ChromeDriver();
-               break;
-           }
-           case "firefox": {
-               System.setProperty(
-                       "webdriver.gecko.driver", "src/main/resources/task6/geckodriver");
-               driver = new FirefoxDriver();
+        switch (browserType) {
+            case "chrome": {
+                System.setProperty(
+                        "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
+                driver = new ChromeDriver();
+                break;
+            }
+            case "firefox": {
+                System.setProperty(
+                        "webdriver.gecko.driver", "src/main/resources/task6/geckodriver");
+                driver = new FirefoxDriver();
                 break;
             }
             default: {
                 System.out.println("I don't know such browser type");
             }
-        }*/
+        }
         System.setProperty(
-                "webdriver.chrome.driver", "src/main/resources/task6/chromedriver");
+                "webdriver.chrome.driver", "src/main/resources/task6/chromedriver 3");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
     }
@@ -100,7 +101,7 @@ public class Browser {
 
     public static void waitForElementToBeDisplayed(By by) {
         Log.logWaitForElementToBeDisplayed(by);
-        WebDriverWait wait = new WebDriverWait(browser.getDriver(), MIDDLE_WAIT);
+        WebDriverWait wait = new WebDriverWait(browser.getDriver(), LONG_WAIT);
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 

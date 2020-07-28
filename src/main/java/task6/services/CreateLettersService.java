@@ -7,7 +7,7 @@ import task6.screens.NewMessagePage;
 
 public class CreateLettersService {
 
-    public static void createAllTypesLetters() throws InterruptedException {
+    public static void createAllTypesLetters() {
         Log.logInfo("Creating all types of letters");
         Letter letter = LetterFactory.getValidLetter();
         NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(letter);

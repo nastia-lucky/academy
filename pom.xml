@@ -72,9 +72,8 @@
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>6.2.2</version>
-            <scope>test</scope>
+            <artifactId>cucumber-testng</artifactId>
+            <version>5.7.0</version>
         </dependency>
     </dependencies>
 </project>

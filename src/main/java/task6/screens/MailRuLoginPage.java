@@ -12,6 +12,7 @@ public class MailRuLoginPage extends BasePage {
     private static final By PASSWORD_INPUT_LOCATOR = By.xpath("//input[@id='mailbox:password']");
     private static final By INCORRECT_LOGIN_MESSAGE_LOCATOR = By.xpath("//div[contains(text(), 'Неверное имя ящика')]");
     private static final By INCORRECT_PASSWORD_MESSAGE_LOCATOR = By.xpath("//div[contains(text(), 'Неверное имя или пароль')]");
+    public static final By INBOX_MESSAGES = By.xpath("//a[@title='Входящие']");
 
     public MailRuLoginPage openPage() {
         Log.logInfo("Opening mailRu page");
@@ -21,12 +22,14 @@ public class MailRuLoginPage extends BasePage {
 
     public MailRuLoginPage typeUserLogin(String login) {
         Log.logInfo("Type user login " + login);
+        Browser.waitForElementToBeDisplayed(LOGIN_INPUT_LOCATOR);
         browser.typeTo(LOGIN_INPUT_LOCATOR, login);
         return this;
     }
 
     public MailRuLoginPage typePassword(String password) {
         Log.logInfo("Type user password " + password);
+        Browser.waitForElementToBeDisplayed(PASSWORD_INPUT_LOCATOR);
         browser.typeTo(PASSWORD_INPUT_LOCATOR, password);
         return this;
     }
@@ -35,6 +38,13 @@ public class MailRuLoginPage extends BasePage {
         Log.logInfo("Clicking submit button");
         browser.clickElement(SUBMIT_BUTTON_LOCATOR);
         return this;
+    }
+
+    public MainAreaPage clickSubmitPasswordButton() {
+        Log.logInfo("Clicking submit password button");
+        browser.clickElement(SUBMIT_BUTTON_LOCATOR);
+        Browser.waitForElementToBeDisplayed(INBOX_MESSAGES);
+        return new MainAreaPage();
     }
 
     public boolean isIncorrectLoginMessageIsDisplayed() {

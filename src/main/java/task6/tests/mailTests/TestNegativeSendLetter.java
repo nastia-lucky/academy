@@ -20,14 +20,14 @@ import task6.utilities.Browser;
 public class TestNegativeSendLetter {
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         Log.logInfo("Set Up");
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
     }
 
     @Test
-    public void writeLetterWithIncorrectAddress() throws InterruptedException {
+    public void writeLetterWithIncorrectAddress() {
         Log.logInfo("Write Letter with incorrect address Test is started");
         Letter letter = LetterFactory.getLetterWithInvalidAddress();
         NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(letter);

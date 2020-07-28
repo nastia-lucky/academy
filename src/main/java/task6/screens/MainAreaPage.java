@@ -57,6 +57,7 @@ public class MainAreaPage extends MainMenuPage {
     }
 
     public String getEmail() {
+        Browser.waitForElementToBeDisplayed(USER_NAME);
         return browser.getText(USER_NAME);
     }
 
@@ -104,5 +105,9 @@ public class MainAreaPage extends MainMenuPage {
     public boolean isEmptyMessagesIconIsDisplayed() {
         Browser.waitForElementToBeDisplayed(EMPTY_MESSAGES_ICON);
         return browser.isElementDisplayed(EMPTY_MESSAGES_ICON);
+    }
+
+    public void waitForLogin() {
+        Browser.waitForElementToBeDisplayed(EXIT_BUTTON);
     }
 }

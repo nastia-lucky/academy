@@ -25,7 +25,7 @@ public class TestDeleteLetter {
     MainAreaPage mainPage = new MainAreaPage();
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         Log.logInfo("Set Up");
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
@@ -34,7 +34,7 @@ public class TestDeleteLetter {
     }
 
     @Test
-    public void deleteLetter() throws InterruptedException {
+    public void deleteLetter() {
         Letter letter = LetterFactory.getValidLetter();
         NewMessagePage page = WriteCorrectLetterService.writeCorrectLetter(letter);
         page.clickSaveButton()

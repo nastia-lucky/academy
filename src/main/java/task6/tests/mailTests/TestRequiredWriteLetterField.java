@@ -20,7 +20,7 @@ import task6.utilities.Browser;
 public class TestRequiredWriteLetterField {
 
     @BeforeClass
-    public void setUp() throws InterruptedException {
+    public void setUp() {
         Log.logInfo("Set Up is started");
         User user = UserFactory.getUserWithValidLogin();
         LoginService.login(user);
@@ -29,7 +29,7 @@ public class TestRequiredWriteLetterField {
     }
 
     @Test
-    public void writeLetterWithAddress() throws InterruptedException {
+    public void writeLetterWithAddress() {
         Log.logInfo("Write Letters With Required Fields Test is started");
         Letter letter = LetterFactory.getLetterWithOnlyAddress();
         NewMessagePage createdLetter = WriteCorrectLetterService.writeCorrectLetter(letter);

@@ -16,7 +16,7 @@ import task6.utilities.Browser;
 public class TestPositiveLogin {
 
     @Test
-    public void LoginTest() throws InterruptedException {
+    public void LoginTest() {
         Log.logInfo("Positive Login Test is started");
         User validUser = UserFactory.getUserWithValidLogin();
         LoginService.login(validUser);
