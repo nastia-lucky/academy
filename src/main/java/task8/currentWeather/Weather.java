@@ -6,7 +6,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Weather {
 
-
     @JsonProperty("main")
     private String mainDescription;
 

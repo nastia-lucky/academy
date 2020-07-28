@@ -1,10 +1,9 @@
-package task8.currentWeather;
+package task8.currentWeather.request;
 
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
-
 
 public class RequestForCurrentWeather {
 

@@ -2,14 +2,17 @@ package task8.tests;
 
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import task8.forecastWeather.DailyWeather;
 import task8.forecastWeather.ForecastWeather;
-import task8.forecastWeather.RequestForForecast;
+import task8.forecastWeather.request.RequestForForecast;
+import task8.listener.Listener;
 
 import java.util.List;
 
+@Listeners(Listener.class)
 public class ForecastHumidityTest {
 
     private Double longitude = 3.42;
@@ -32,9 +35,11 @@ public class ForecastHumidityTest {
     public void forecastHumidityTest(String api) {
         Response response = new RequestForForecast()
                 .withCoordinates(latitude, longitude)
-                .withExclude(RequestForForecast.Excludes.MINUTELY, RequestForForecast.Excludes.HOURLY, RequestForForecast.Excludes.CURRENT)
+                .withExclude(RequestForForecast.Excludes.MINUTELY, RequestForForecast.Excludes.HOURLY,
+                        RequestForForecast.Excludes.CURRENT)
                 .withApiId(api)
                 .doRequest();
-        Assert.assertTrue(getMaxHumidity(response.as(ForecastWeather.class).getDailyWeather()) > expectedHumidity, "The humidity for 5 days is less than expected");
+        Assert.assertTrue(getMaxHumidity(response.as(ForecastWeather.class).getDailyWeather()) > expectedHumidity,
+                "The humidity for 5 days is less than expected");
     }
 }

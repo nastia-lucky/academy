@@ -1,4 +1,4 @@
-package task8.forecastWeather;
+package task8.forecastWeather.request;
 
 import io.restassured.http.Method;
 import io.restassured.response.Response;

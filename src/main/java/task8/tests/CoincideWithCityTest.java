@@ -2,11 +2,14 @@ package task8.tests;
 
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import task8.currentWeather.CurrentWeatherData;
-import task8.currentWeather.RequestForCurrentWeather;
+import task8.currentWeather.request.RequestForCurrentWeather;
+import task8.listener.Listener;
 
+@Listeners(Listener.class)
 public class CoincideWithCityTest {
 
     private Double longitude = 52.01;
@@ -20,6 +23,7 @@ public class CoincideWithCityTest {
                 .withCoordinates(latitude, longitude)
                 .withApiId(api)
                 .doRequest();
-        Assert.assertEquals(response.as(CurrentWeatherData.class).getName(), cityName, "The country doesn't coincide with coordinate");
+        Assert.assertEquals(response.as(CurrentWeatherData.class).getName(), cityName,
+                "The country doesn't coincide with coordinate");
     }
 }
