@@ -40,9 +40,6 @@ public class Browser {
                 System.out.println("I don't know such browser type");
             }
         }
-        System.setProperty(
-                "webdriver.chrome.driver", "src/main/resources/task6/chromedriver 3");
-        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
     }
 
