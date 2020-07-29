@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All" parallel="classes" thread-count="2" verbose="1">
+    <parameter name="wealth" value="1000000.0"></parameter>
+    <parameter name="notwealth" value="999999"></parameter>
+    <listeners>
+        <listener class-name="task4.Listener"></listener>
+    </listeners>
+    <test name="TestNGSuite">
+        <classes>
+            <class name="task4.BaseTest"></class>
+            <class name="task4.BoyCreationTest"></class>
+            <class name="task4.BoyMoodCheck"></class>
+            <class name="task4.GirlTest"></class>
+            <class name="task4.GirlMoodCheck"></class>
+        </classes>
+    </test>
+</suite>
