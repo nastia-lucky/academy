@@ -1,0 +1,20 @@
+<suite name="mail ru test">
+    <test name="mail.ru test">
+        <classes>
+            <class name="task6.tests.mailTests.TestWriteCorrectLetter">
+            </class>
+
+            <class name="task6.tests.cloudsTest.CloudLogin"></class>
+            <class name="task6.tests.cloudsTest.CreateFolderTest"></class>
+            <class name="task6.tests.cloudsTest.RemoveFolderTest"></class>
+            <class name="task6.tests.cloudsTest.ShareLinkTest"></class>
+            <class name="task6.tests.cloudsTest.UploadFileTest"></class>
+            <class name="task6.tests.mailTests.TestIncorrectPassword"></class>
+            <class name="task6.tests.mailTests.TestIncorrectLogin"></class>
+            <class name="task6.tests.mailTests.TestNegativeSendLetter"></class>
+            <class name="task6.tests.mailTests.TestPositiveLogin"></class>
+            <class name="task6.tests.mailTests.TestDeleteLetter"></class>
+            <class name="task6.tests.mailTests.TestRequiredWriteLetterField"></class>
+        </classes>
+    </test>
+</suite>
